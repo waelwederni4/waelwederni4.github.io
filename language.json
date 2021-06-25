@@ -5,19 +5,19 @@
   "language": {
     "en": {
       "#heading-titel": "Wederni Wael",
-      "#heading-nav1": "home",
-      "#heading-nav2": "about",
-      "#heading-nav3": "services",
-      "#heading-nav4": "portofolio",
-      "#heading-nav5": "contact"
+      "#heading-nav1": "Home",
+      "#heading-nav2": "About",
+      "#heading-nav3": "Services",
+      "#heading-nav4": "Portofolio",
+      "#heading-nav5": "Contact"
     },
-    "ar": {
-      "#heading-titel": "وائل الودرني",
-      "#heading-nav1": "home",
-      "#heading-nav2": "about",
-      "#heading-nav3": "services",
-      "#heading-nav4": "portofolio",
-      "#heading-nav5": "contact"
+    "fr": {
+      "#heading-titel": "Wederni Wael",
+      "#heading-nav1": "Accueil",
+      "#heading-nav2": "À propos",
+      "#heading-nav3": "Services",
+      "#heading-nav4": "Portefeuille",
+      "#heading-nav5": "Contact"
     }
   }
 }
