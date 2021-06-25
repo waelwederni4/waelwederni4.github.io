@@ -20,6 +20,10 @@ $(function () {
         mainWidth()
     })
 })
+$(document).ready(function () {
+    if (language != null && language !== default_lang)
+        getLanguage(language);
+});
 // Language JSON File Location
 var language = localStorage.getItem('language');
 // Default Language
@@ -102,8 +106,7 @@ $(".parnet-sections .input input").on("click", function () {
 //switch between language
 $(".parnet-sections .lang input").on("click", function () {
     let lang = $(this).attr("class");
-    if (lang != null && lang !== default_lang)
-        getLanguage(lang);
+    setLanguage(lang);
 })
 
 //translate nav-bar section
