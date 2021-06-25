@@ -1,8 +1,8 @@
 {
   "head": {
-    "title": " <span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>"
+    "title": "Wael Wederni"
   },
-  "#heading-titel": "Wederni Wael",
+  "#heading-titel": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
   "#heading-nav1": "Home",
   "#heading-nav2": "About",
   "#heading-nav3": "Services",
