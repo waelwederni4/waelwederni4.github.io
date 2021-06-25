@@ -6,20 +6,20 @@
     "en": {
       "title": "Wael Wederni",
       "#heading-titel": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
-      "#heading-nav1": "Home",
-      "#heading-nav2": "About",
-      "#heading-nav3": "Services",
-      "#heading-nav4": "Portofolio",
-      "#heading-nav5": "Contact"
+      "#heading-nav1": "<i class=\"fas fa-home\"></i>Home",
+      "#heading-nav2": "<i class=\"fas fa-user\"></i>About",
+      "#heading-nav3": "<i class=\"fas fa-list\"></i>Services",
+      "#heading-nav4": "<i class=\"fas fa-briefcase\"></i>Portofolio",
+      "#heading-nav5": "<i class=\"fas fa-comments\"></i>Contact"
     },
     "fr": {
       "title": "Wael Wederni",
       "#heading-titel": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
-      "#heading-nav1": "Accueil",
-      "#heading-nav2": "À propos",
-      "#heading-nav3": "Services",
-      "#heading-nav4": "Portefeuille",
-      "#heading-nav5": "Contact"
+      "#heading-nav1": "<i class=\"fas fa-home\"></i>Accueil",
+      "#heading-nav2": "<i class=\"fas fa-user\"></i>À propos",
+      "#heading-nav3": "<i class=\"fas fa-list\"></i>Services",
+      "#heading-nav4": "<i class=\"fas fa-briefcase\"></i>Portefeuille",
+      "#heading-nav5": "<i class=\"fas fa-comments\"></i>Contact"
     }
   }
 }
