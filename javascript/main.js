@@ -52,7 +52,7 @@ function MultiLanguage(c) {
             }
         }
         return e
-    })
+    });
 }
 
 //translate setting section
