@@ -14,7 +14,17 @@ $(function () {
             $(".parent .section-four .container .over-lay").css("width", remainWidth)
         }
     }
+    let listItems = document.querySelectorAll('.soical-icons li');
 
+    listItems.forEach((item, index) => {
+        item.addEventListener('click', (event) => {
+            const str=event.currentTarget.innerHTML;
+            if(str.contains("facebook"))window.location.replace("https://www.facebook.com/wael.wederni");
+            else if(str.contains("twitter"))window.location.replace("https://twitter.com/Wael21871333");
+            else if(str.contains("instagram"))window.location.replace("https://www.instagram.com/wael_wederni/?hl=fr");
+            else if(str.contains("linkedin-in"))window.location.replace("https://www.linkedin.com/in/wael-wederni-235b6018a/");
+        });
+    });
     mainWidth()
     $(window).resize(function () {
         mainWidth()
@@ -103,15 +113,6 @@ $(".parnet-sections .input input").on("click", function () {
 //switch between language
 $(".parnet-sections .lang input").on("click", function () {
     let lang = $(this).attr("class");
-    MultiLanguage(lang);
-})
-//facebook btn
-$(".parnet-sections .soical-icons ul li i").on("click", function () {
-    let btn = $(this).attr("class");
-    if(btn.contains("facebook"))window.location.replace("https://www.facebook.com/wael.wederni");
-    else if(btn.contains("twitter"))window.location.replace("https://twitter.com/Wael21871333");
-    else if(btn.contains("instagram"))window.location.replace("https://www.instagram.com/wael_wederni/?hl=fr");
-    else if(btn.contains("linkedin-in"))window.location.replace("https://www.linkedin.com/in/wael-wederni-235b6018a/");
     MultiLanguage(lang);
 })
 
