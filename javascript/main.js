@@ -20,10 +20,7 @@ $(function () {
         mainWidth()
     })
 })
-$(document).ready(function () {
-    if (language != null && language !== default_lang)
-        getLanguage(language);
-});
+
 // Language JSON File Location
 var language = localStorage.getItem('language');
 // Default Language
@@ -57,6 +54,10 @@ function getLanguage() {
         })
     })
 }
+$(document).ready(function () {
+    if (language != null && language !== default_lang)
+        getLanguage(language);
+});
 
 //translate setting section
 $(".parnet-sections .setting .icon").on("click", function () {
