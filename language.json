@@ -1,0 +1,23 @@
+{
+  "config": {
+    "default": "en"
+  },
+  "language": {
+    "en": {
+      "#heading-titel": "Wederni Wael",
+      "#heading-nav1": "home",
+      "#heading-nav2": "about",
+      "#heading-nav3": "services",
+      "#heading-nav4": "portofolio",
+      "#heading-nav5": "contact"
+    },
+    "ar": {
+      "#heading-titel": "وائل الودرني",
+      "#heading-nav1": "home",
+      "#heading-nav2": "about",
+      "#heading-nav3": "services",
+      "#heading-nav4": "portofolio",
+      "#heading-nav5": "contact"
+    }
+  }
+}
