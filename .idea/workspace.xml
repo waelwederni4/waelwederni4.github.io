@@ -4,7 +4,6 @@
     <list default="true" id="022cf25c-218b-43ff-886b-e5b9264c9ea6" name="Default Changelist" comment="wwael">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624578707670</updated>
       <workItem from="1624578709574" duration="2462000" />
-      <workItem from="1624656775564" duration="1270000" />
+      <workItem from="1624656775564" duration="1393000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,7 @@ function getLanguage() {
     (language == null) ? setLanguage(default_lang) : false;
     // Load data of selected language
     $.ajax({
-        url: 'locales/' + language + '.json',
+        url: 'languages/' + language + '.json',
         dataType: 'json', async: true
     }).done(function (lang) {
         // add selected language class to the body tag
