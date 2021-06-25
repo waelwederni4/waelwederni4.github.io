@@ -118,7 +118,7 @@ $(".color-style.fas.fa-bars").on("click", function () {
 
 //switch between sections
 $(".parent .nav-bar .row ul li").on("click", function () {
-    let ele = $("." + $(this).text());
+    let ele = $("." + $(this).attr("id"));
     ele.css("z-index", "9").animate({
         "left": "0%"
     }, "fast").siblings(".section").css("z-index", "8").delay(650).animate({

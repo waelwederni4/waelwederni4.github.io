@@ -5,7 +5,7 @@
   "language": {
     "en": {
       "title": "Wael Wederni",
-      "#heading-titel": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
+      "#heading-titel0": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
       "#heading-nav1": "<i class=\"fas fa-home\"></i>Home",
       "#heading-nav2": "<i class=\"fas fa-user\"></i>About",
       "#heading-nav3": "<i class=\"fas fa-list\"></i>Services",
@@ -14,7 +14,7 @@
     },
     "fr": {
       "title": "Wael Wederni",
-      "#heading-titel": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
+      "#heading-titel0": "<span class=\"part after bgcolor-style\"></span>\n                        Wael Wederni\n                        <span class=\"part before bgcolor-style\"></span>",
       "#heading-nav1": "<i class=\"fas fa-home\"></i>Accueil",
       "#heading-nav2": "<i class=\"fas fa-user\"></i>À propos",
       "#heading-nav3": "<i class=\"fas fa-list\"></i>Services",
