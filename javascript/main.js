@@ -54,8 +54,6 @@ function MultiLanguage(c) {
         return e
     })
 }
-})
-}
 
 //translate setting section
 $(".parnet-sections .setting .icon").on("click", function () {
