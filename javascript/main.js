@@ -21,24 +21,8 @@ $(function () {
     })
 })
 
-// Language JSON File Location
-var language = localStorage.getItem('language');
-// Default Language
-var default_lang = 'en';
-
-// Set Selected Language
-function setLanguage(lang) {
-    localStorage.setItem('language', lang);
-    language = localStorage.getItem('language');
-    // Run Multi Language Plugin
-    getLanguage()
-}
-
 // Run Multi Language Plugin
-function getLanguage() {
-    // Language on user preference
-    (language == null) ? setLanguage(default_lang) : false;
-    // Load data of selected language
+function getLanguage(language) {
     $.ajax({
         url: 'languages/' + language + '.json',
         dataType: 'json', async: true
@@ -54,10 +38,6 @@ function getLanguage() {
         })
     })
 }
-$(document).ready(function () {
-    if (language != null && language !== default_lang)
-        getLanguage(language);
-});
 
 //translate setting section
 $(".parnet-sections .setting .icon").on("click", function () {
@@ -107,7 +87,7 @@ $(".parnet-sections .input input").on("click", function () {
 //switch between language
 $(".parnet-sections .lang input").on("click", function () {
     let lang = $(this).attr("class");
-    setLanguage(lang);
+    getLanguage(lang);
 })
 
 //translate nav-bar section
