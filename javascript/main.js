@@ -21,22 +21,40 @@ $(function () {
     })
 })
 
-// Run Multi Language Plugin
-function getLanguage(language) {
-    $.ajax({
-        url: 'languages/' + language + '.json',
-        dataType: 'json', async: true
-    }).done(function (lang) {
-        // add selected language class to the body tag
-        $('body').attr('class', language);
-        // Loop through message in data
-        $.each(lang, function (index, val) {
-            (index === 'head') ? $(document).attr("title", val['title']) : false;
-            $(index).children().each(function () {
-                $(this).text(val[$(this).attr('key')])
-            })
-        })
+function MultiLanguage(c) {
+    var b = this;
+    if (c == null) {
+        c = null
+    }
+    return $.getJSON("language.json", function (g) {
+        var f, d, h, e;
+        if (c !== null) {
+            localStorage.MultiLanguage = c
+        } else {
+            if (typeof localStorage.MultiLanguage === "undefined") {
+                c = localStorage.MultiLanguage = g.config["default"]
+            } else {
+                c = localStorage.MultiLanguage
+            }
+        }
+        d = g.language[c];
+        e = [];
+        for (f in d) {
+            h = d[f];
+            if ($(f).get(0).tagName.toLowerCase() === "title") {
+                document.title = h;
+                continue
+            }
+            if (f.length > 0) {
+                e.push($(f).html(d[f]))
+            } else {
+                e.push(void 0)
+            }
+        }
+        return e
     })
+}
+})
 }
 
 //translate setting section
@@ -87,7 +105,7 @@ $(".parnet-sections .input input").on("click", function () {
 //switch between language
 $(".parnet-sections .lang input").on("click", function () {
     let lang = $(this).attr("class");
-    getLanguage(lang);
+    MultiLanguage(lang);
 })
 
 //translate nav-bar section
