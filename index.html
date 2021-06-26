@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/darkMode.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/polyglot-language-switcher.css" type="text/css" rel="stylesheet">
+
     <title id="titel">Wael Wederni</title>
 </head>
 <body>
@@ -32,8 +34,8 @@
                     </h1>
                 </div>
                 <div class="row">
-                    <ul class="redColor">
-                        <li id="heading-nav1" class="heading redColor active"><i class="fas fa-home"></i>home</li>
+                    <ul class="blueColor">
+                        <li id="heading-nav1" class="heading blueColor active"><i class="fas fa-home"></i>home</li>
                         <li id="heading-nav2" class="heading"><i class="fas fa-user"></i>about</li>
                         <li id="heading-nav3" class="heading"><i class="fas fa-list"></i>services</li>
                         <li id="heading-nav4" class="heading"><i class="fas fa-briefcase"></i>portofolio</li>
@@ -46,23 +48,18 @@
 
         <!--start parnet-sections-->
         <div class="parnet-sections">
-            <!--start setting section-->
+
+            <div class="switcher">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
             <div class="setting">
                 <div class="icon">
-                    <i class="fas fa-cog"></i>
-                </div>
-                <h4 class="heading">style switcher</h4>
-                <ul class="colors">
-                    <li class="redColor"></li>
-                    <li class="blueColor"></li>
-                    <li class="OrangeColor"></li>
-                    <li class="YellowColor"></li>
-                    <li class="greenColor"></li>
-                </ul>
-                <h4 class="heading">body style</h4>
-                <div class="input">
-                        <input type="radio" name="style" class="light" checked/><label>light</label>
-                    <input type="radio" name="style" class="dark"/><label>dark</label>
+                    <i class="fas fa-3x fa-angle-double-left"></i>
                 </div>
                 <h4 class="heading">Language</h4>
                 <div class="lang">
@@ -85,6 +82,7 @@
                             <li class="bgcolor-style"><i class="fab fa-twitter"></i></li>
                             <li class="bgcolor-style"><i class="fab fa-instagram"></i></li>
                             <li class="bgcolor-style"><i class="fab fa-linkedin-in"></i></li>
+                            <li class="bgcolor-style"><i class="fab fa-github"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -388,6 +386,7 @@
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
     <script src="javascript/main.js"></script>
+
     <!--end script file-->
 </body>
 </html>

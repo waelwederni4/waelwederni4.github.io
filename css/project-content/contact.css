@@ -17,7 +17,7 @@
 
 .parent .section-six .content .head .bord i {
     font-size: 50px;
-    color:var(--redColor);
+    color:var(--blueColor);
     margin-bottom: 30px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .parent .section-six .content .foot button {
-    background-color: var(--redColor);
+    background-color: var(--blueColor);
     color: white;
     padding:12px 20px;
     border-radius: 25px;

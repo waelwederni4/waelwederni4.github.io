@@ -24,12 +24,12 @@ let listItems = document.querySelectorAll('.soical-icons li');
 
 listItems.forEach((item, index) => {
     item.addEventListener('click', (event) => {
-        alert(`${event.currentTarget.innerHTML} item was click`);
-        /*const str=event.currentTarget.innerHTML;
-        if(str.contains("facebook"))window.location.replace("https://www.facebook.com/wael.wederni");
-        else if(str.contains("twitter"))window.location.replace("https://twitter.com/Wael21871333");
-        else if(str.contains("instagram"))window.location.replace("https://www.instagram.com/wael_wederni/?hl=fr");
-        else if(str.contains("linkedin-in"))window.location.replace("https://www.linkedin.com/in/wael-wederni-235b6018a/");*/
+        const str=event.currentTarget.innerHTML;
+        if(str.includes("facebook"))window.location.replace("https://www.facebook.com/wael.wederni");
+        else if(str.includes("twitter"))window.location.replace("https://twitter.com/Wael21871333");
+        else if(str.includes("instagram"))window.location.replace("https://www.instagram.com/wael_wederni/?hl=fr");
+        else if(str.includes("linkedin-in"))window.location.replace("https://www.linkedin.com/in/wael-wederni-235b6018a/");
+        else if(str.includes("github"))window.location.replace("https://github.com/waelwederni4");
     });
 });
 function MultiLanguage(c) {
@@ -106,10 +106,25 @@ $(".parent .nav-bar .row ul li").on("click", function () {
     $(this).addClass("heading " + targetElemet.attr("class") + " active")
         .siblings().removeClass("" + targetElemet.attr("class") + " active")
 })
+const chk = document.getElementById('chk');
 
+chk.addEventListener('change', () => {
+    let parentstr = $(".parent").attr("class");
+    if(parentstr=="parent light"){
+        $(".parent").attr("class", "parent dark");
+    }else{
+        $(".parent").attr("class", "parent light");
+    }
+});
 //switch between dark/light mode
-$(".parnet-sections .input input").on("click", function () {
-    $(".parent").attr("class", "parent " + $(this).attr("class"))
+$(".parnet-sections .switcher").on("click", function () {
+    let parentstr = $(".parent").attr("class");
+    if(parentstr=="parent light"){
+        $(".parent").attr("class", "parent dark");
+    }else{
+        $(".parent").attr("class", "parent light");
+    }
+   // $(".parent").attr("class", "parent " + $(this).attr("class"))
 })
 //switch between language
 $(".parnet-sections .lang input").on("click", function () {

@@ -3,7 +3,94 @@
     height: 100vh;
     display: flex;
 }
+/**/
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar:before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
+/**/
 .parent .nav-bar {
     width: 400px;
     height: 100%;
@@ -16,7 +103,7 @@
 .parent .nav-bar .fa-bars,
 .parent .nav-bar .fa-times{
     position: absolute;
-    color: var(--redColor);
+    color: var(--blueColor);
     top:10px;
     right: -50px;
     width: 40px;
@@ -48,7 +135,7 @@
     width: 30px;
     height: 30px;
     z-index: -1;
-    background-color: var(--redColor);
+    background-color: var(--blueColor);
 }
 
 .parent .nav-bar .txt h1 .part.after {
@@ -88,7 +175,7 @@
 }
 
 .parent .nav-bar .row ul.redColor li:hover {
-    color: var(--redColor);
+    color: var(--blueColor);
 }
 .parent .nav-bar .row ul.blueColor li:hover {
     color: var(--blueColor);
@@ -144,7 +231,60 @@
 .parent .parnet-sections .section.active {
     left: 0%;
 }
+.parent .parnet-sections .selectpicker{
+    z-index: 99999;
+}
+/*start app bar*/
+.parent .parnet-sections .switcher{
+    position: fixed;
+    right: 60px;
+    top:20px;
+    z-index: 99999;
+}
+.parent .parnet-sections .switcher .checkbox {
+    opacity: 0;
+    position: absolute;
+}
 
+.parent .parnet-sections .switcher .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.parent .parnet-sections .switcher .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.parent .parnet-sections .switcher .checkbox:checked + .label .ball {
+    transform: translateX(22px);
+}
+
+
+.parent .parnet-sections .switcher .label .fa-moon {
+    color: #f1c40f;
+}
+
+.parent .parnet-sections .switcher .label .fa-sun {
+    color: #f39c12;
+}
+/*end app bar*/
 /*start setting sections*/
 .parent .parnet-sections .setting {
     position: fixed;
@@ -289,7 +429,7 @@
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    background-color: var(--redColor);
+    background-color: var(--blueColor);
     color: white
 }
 /*end sections one*/

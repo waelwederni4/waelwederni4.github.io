@@ -22,11 +22,11 @@
 
 .parent .section-four .content .filter-list ul li.active,
 .parent .section-four .content .filter-list ul li:hover {
-    border-bottom: 3px solid var(--redColor);
+    border-bottom: 3px solid var(--blueColor);
 }
 
 .parent .section-four .content .filter-list ul.redColor li.active {
-    border-bottom-color: var(--redColor);
+    border-bottom-color: var(--blueColor);
 }
 
 .parent .section-four .content .filter-list ul.blueColor li.active {
@@ -46,7 +46,7 @@
 }
 
 .parent .section-four .content .filter-list ul.redColor li.active {
-    border-bottom-color: var(--redColor);
+    border-bottom-color: var(--blueColor);
 }
 
 .parent .section-four .content .filter-list ul.blueColor li:hover {
@@ -140,7 +140,7 @@
     color: black;
     border-radius: 50%;
     cursor: pointer;
-    color:var(--redColor)
+    color:var(--blueColor)
 }
 
 .parent .section-four .content .grid .bord:hover h2 {

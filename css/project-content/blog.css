@@ -24,7 +24,7 @@
     position: absolute;
     bottom: 15px;
     left: 15px;
-    background-color: var(--redColor);
+    background-color: var(--blueColor);
     color: white;
     padding: 5px 10px;
     border-radius:5px ;
@@ -43,7 +43,7 @@
 }
 
 .parent .section-five .content .bord .txt p.tag span {
-    color:var(--redColor);
+    color:var(--blueColor);
     font-weight: bolder;
     cursor: pointer;
     margin-left: 6px;
