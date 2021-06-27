@@ -1,37 +1,37 @@
-.parent .section-six .content {
+.parent .section-five .content {
     margin-top: 50px;
     width: 100%;
 }
 
-.parent .section-six .content .head {
+.parent .section-five .content .head {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.parent .section-six .content .head .bord {
+.parent .section-five .content .head .bord {
     width: 32%;
     padding: 15px 20px;
     border-radius: 25px;
 }
 
-.parent .section-six .content .head .bord i {
+.parent .section-five .content .head .bord i {
     font-size: 50px;
     color:var(--blueColor);
     margin-bottom: 30px;
 }
 
-.parent .section-six .content .head .bord span {
+.parent .section-five .content .head .bord span {
     font-size: 20px;
     margin-top: 5px;
 }
 
-.parent .section-six .content .foot {
+.parent .section-five .content .foot {
     margin-top: 50px;
 }
 
-.parent .section-six .content .foot input,
-.parent .section-six .content .foot textarea {
+.parent .section-five .content .foot input,
+.parent .section-five .content .foot textarea {
     padding:15px 20px;
     border: 1px solid var(--borderDark-light);
     border-radius: 20px;
@@ -39,22 +39,22 @@
     font-size: 17px;
 }
 
-.parent .section-six .content .foot input.half {
+.parent .section-five .content .foot input.half {
     width: 49%;
 }
 
-.parent .section-six .content .foot input.half:nth-of-type(2) {
+.parent .section-five .content .foot input.half:nth-of-type(2) {
     float: right;
 }
 
-.parent .section-six .content .foot textarea {
+.parent .section-five .content .foot textarea {
     width: 100%;
     margin-top: 30px;
     resize: none;
     height: 200px;
 }
 
-.parent .section-six .content .foot button {
+.parent .section-five .content .foot button {
     background-color: var(--blueColor);
     color: white;
     padding:12px 20px;

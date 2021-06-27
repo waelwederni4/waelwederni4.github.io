@@ -2,6 +2,7 @@
     .parent .nav-bar {
         position: fixed;
         left: -400px;
+        z-index: 999999;
         transition: 0.5s ease-in-out left;
     }
     .parent .nav-bar.translated {
@@ -10,6 +11,7 @@
 
     .parent .nav-bar .fa-bars {
         display: block;
+        z-index: 99999999999;
     }
 }
 
@@ -76,15 +78,6 @@
         padding-bottom: 30px;
     }
 
-    .parent .section-five .content {
-        flex-wrap: wrap;
-    }
-
-    .parent .section-five .content .bord {
-        width: 47%;
-        margin-bottom: 20px;
-    }
-
 }
 @media (max-width:1000px) {
     .parent.dark .section-four .content .grid {
@@ -93,12 +86,7 @@
     }
 }
 
-@media (max-width:749px) {
-    .parent .section-five .content .bord {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
+
 
 @media (max-width:576px) {
     .parent .section .row .content.grid,
@@ -129,27 +117,27 @@
 /*end portofolio  section*/
 /*start content  section*/
 @media (max-width:778px) {
-    .parent .section-six .content .head {
+    .parent .section-five .content .head {
         flex-direction: column;
     }
 
-    .parent .section-six .content .head .bord {
+    .parent .section-five .content .head .bord {
         width: 100%;
     }
 
-    .parent .section-six .content .head .bord:not(:last-child) {
+    .parent .section-five .content .head .bord:not(:last-child) {
         margin-bottom: 40px;
     }
 
-    .parent .section-six .content .foot input.half {
+    .parent .section-five .content .foot input.half {
         width: 100%;
     }
 
-    .parent .section-six .content .foot input.half:not(:last-child) {
+    .parent .section-five .content .foot input.half:not(:last-child) {
         margin-bottom: 30px;
     }
 
-    .parent .section-six .content .foot textarea {
+    .parent .section-five .content .foot textarea {
         margin-top: 0;
     }
 }

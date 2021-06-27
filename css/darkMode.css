@@ -4,8 +4,7 @@
 
 .parent.dark .parnet-sections .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
-.parent.dark .parnet-sections .section-one .main-img,
-.parent.dark .section-five .content .bord {
+.parent.dark .parnet-sections .section-one .main-img {
     box-shadow: none;
 }
 
@@ -16,8 +15,8 @@
 .parent.dark .section-four .content .grid .bord
 .parent.dark .parnet-sections .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
-.parent.dark .section-six .content .foot input,
-.parent.dark .section-six .content .foot textarea,
+.parent.dark .section-five .content .foot input,
+.parent.dark .section-five .content .foot textarea,
 .parent.dark .nav-bar{
     border: none;
 }
@@ -31,10 +30,9 @@
 .parent.dark .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
 .parent.dark .section-four .content .grid .bord,
-.parent.dark .section-five .content .bord .txt,
-.parent.dark .section-six .content .foot input,
-.parent.dark .section-six .content .foot textarea,
-.parent.dark .section-six .content .head .bord {
+.parent.dark .section-five .content .foot input,
+.parent.dark .section-five .content .foot textarea,
+.parent.dark .section-five .content .head .bord {
     background-color: var(--BCLight-dark);
 }
 
@@ -47,7 +45,7 @@
 .parent.dark .section-four .content .filter-list ul li,
 .parent.dark .nav-bar h1,
 .parent.dark .nav-bar .row li[class="heading"],
-.parent.dark .section-six .content .foot input,
-.parent.dark .section-six .content .foot textarea {
+.parent.dark .section-five .content .foot input,
+.parent.dark .section-five .content .foot textarea {
     color: white;
 }
