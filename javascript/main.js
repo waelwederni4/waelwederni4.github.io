@@ -20,6 +20,7 @@ $(window).ready(function () {
             mainWidth()
         })
     })
+
     let listItems = document.querySelectorAll('.soical-icons li');
     listItems.forEach((item, index) => {
         item.addEventListener('click', (event) => {
@@ -65,14 +66,10 @@ $(window).ready(function () {
             return e
         });
     }
-
-    $('.parnet-sections #polyglotLanguageSwitcher').polyglotLanguageSwitcher({
-        effect: 'fade',
-        testMode: true,
-        onChange: function (evt) {
-            MultiLanguage(evt.selectedItem);
-        }
-    });
+    $("input[type='radio'][name='language-switch1']").on("click", function () {
+        const lang= $("input[type='radio'][name='language-switch1']:checked").val();
+        MultiLanguage(lang)
+    })
 //translate setting section
     $(".parnet-sections .setting .icon").on("click", function () {
         const eleWidth = $(this).parent().outerWidth();
@@ -140,6 +137,18 @@ $(window).ready(function () {
             item.delay(400).fadeIn()
         }
     })
+    $(".language__container--fr").on("click", function () {
+        let fr = document.getElementById("fr");
+        let en = document.getElementById("en");
+        fr.checked = true;
+        en.checked = false;
+    })
+    $(".language__container--en").on("click", function () {
+        let fr = document.getElementById("fr");
+        let en = document.getElementById("en");
+        fr.checked = false;
+        en.checked = true;
+    })
 
 //section-four on click img
     $(".parent .section-four .content .items .bord .fa-search").on("click", function () {
@@ -164,6 +173,7 @@ $(window).ready(function () {
 
         closeNavBar($(window))
         closeNavBar($(".parent .nav-bar .row ul li"))
+
     })
 
 //stop propagation
@@ -176,5 +186,9 @@ $(window).ready(function () {
         stopPropagation($(".color-style.fas.fa-bars"))
         stopPropagation($(".parent .nav-bar"))
         stopPropagation($(".parent .parnet-sections .setting"))
+        setTimeout(()=>{
+            $('.parent .splash').addClass('display-none');
+        },2000);
     })
+    
 })

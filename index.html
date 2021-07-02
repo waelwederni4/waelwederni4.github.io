@@ -10,20 +10,22 @@
     <link rel="stylesheet" href="css/project-content/about.css">
     <link rel="stylesheet" href="css/project-content/services.css">
     <link rel="stylesheet" href="css/project-content/portofolio.css">
-    <link rel="stylesheet" href="css/project-content/blog.css">
     <link rel="stylesheet" href="css/project-content/contact.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/darkMode.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="css/polyglot-language-switcher.css" type="text/css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title id="titel">Wael Wederni</title>
 </head>
 <body>
     <!--start parnet-->
     <div class="parent light">
+        <div class="splash">
+            <img class="img-fluid center-block fade-in" src="imgs/splash.png"/>
+        </div>
         <!--start navBar section-->
         <div class="nav-bar">
-            <div class="container">
+                <div class="container">
                 <i class="color-style fas fa-bars"></i>
                 <div class="txt">
                     <h1 id="heading-titel0" class="heading">
@@ -44,26 +46,36 @@
             </div>
         </div>
         <!--end navBar section-->
+        <header>
+            <nav>
+                <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
+                    <div class="language__container--left language__container--fr">
+                        <input class="language__control" type="radio" id="fr" value="fr" name="language-switch1">
+                        <label class="language__label" for="fr">
+                            FR<span class="hidden"></span>
+                        </label>
+                    </div>
+                    <div class="language__container--right language__container--en">
+                        <input class="language__control" type="radio" id="en" value="en" name="language-switch1" checked>
+                        <label class="language__label" for="en">
+                            EN<span class="hidden"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="switcher">
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <div class="ball"></div>
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
 
+                    </label>
+                </div>
+            </nav>
+        </header>
         <!--start parnet-sections-->
         <div class="parnet-sections">
-            <div id="polyglotLanguageSwitcher">
-                <form action="#">
-                    <select id="polyglot-language-options">
-                        <option id="en" value="en" selected></option>
-                        <option id="fr" value="fr"></option>
-                    </select>
-                </form>
-            </div>
-            <div class="switcher">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                    <div class="ball"></div>
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
 
-                </label>
-            </div>
 
             <!--end setting section-->
             <!--start section one -->
@@ -90,13 +102,13 @@
             <div class="section-two flex-start section heading-nav2">
                 <div class="container">
                     <div class="row head">
-                        <h1 class="heading top">
+                        <h1 id="about-me" class="heading top">
                             about me
                             <hr class="bgcolor-style long">
                             <hr class="bgcolor-style short">
                         </h1>
-                        <h4 class="heading">i'm wael wederni and <span class="color-style">Software Engineer</span></h4>
-                        <p class="text">I'm wael wederni and Software Engineer
+                        <h4 id="about-me1" class="heading">i'm wael wederni and <span class="color-style">Software Engineer</span></h4>
+                        <p id="about-me2" class="text">I'm wael wederni and Software Engineer
                             I am a Software Engineer, and I'm very passionate and dedicated
                             to my work. With 3 years experience as a Mobile developer (Android/Java/kotlin/flutter),
                             I have acquired the skills and knowledge necessary to make your project a success.
@@ -105,20 +117,20 @@
                         <div class="content">
                             <div class="bord one">
                                 <div class="data">
-                                    <p class="heading">birthdat :<span class="text">20/11/1997</span></p>
-                                    <p class="heading">age :<span class="text">24</span></p>
-                                    <p class="heading">websits :<span class="text">waelwederni.me</span></p>
-                                    <p class="heading">email :<span class="text">waelwederni4@gmail.com</span></p>
+                                    <p id="content0" class="heading">birthdat :<span class="text">20/11/1997</span></p>
+                                    <p id="content1" class="heading">age :<span class="text">24</span></p>
+                                    <p id="content2" class="heading">websits :<span class="text">waelwederni.me</span></p>
+                                    <p id="content3" class="heading">email :<span class="text">waelwederni4@gmail.com</span></p>
                                 </div>
                                 <div class="data">
-                                    <p class="heading">degree :<span class="text">CIS</span></p>
-                                    <p class="heading">Phone :<span class="text">+216 29 899 262 / +216 25 488 161</span></p>
-                                    <p class="heading">city :<span class="text">Tataouine</span></p>
-                                    <p class="heading">Freelance :<span class="text">available</span></p>
+                                    <p id="content4" class="heading">degree :<span class="text">CIS</span></p>
+                                    <p id="content5" class="heading">Phone :<span class="text">+216 29 899 262 / +216 25 488 161</span></p>
+                                    <p id="content6" class="heading">city :<span class="text">Tataouine</span></p>
+                                    <p id="content7" class="heading">Freelance :<span class="text">available</span></p>
                                 </div>
                                 <div class="buttons">
-                                    <button class="bgcolor-style">download CV</button>
-                                    <button class="bgcolor-style">hire me</button>
+                                    <button id="content8" class="bgcolor-style">download CV</button>
+                                    <button id="content9" class="bgcolor-style">hire me</button>
                                 </div>
                             </div>
                             <div class="bord two">
@@ -382,7 +394,6 @@
     <!--start script file-->
     <script src="javascript/jquery-3.6.0.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>
-    <script src="javascript/jquery.polyglot.language.switcher.js" type="text/javascript"></script>
     <script src="javascript/main.js"></script>
 
     <!--end script file-->

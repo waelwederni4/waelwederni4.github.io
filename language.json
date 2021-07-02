@@ -10,7 +10,22 @@
       "#heading-nav2": "<i class=\"fas fa-user\"></i>About",
       "#heading-nav3": "<i class=\"fas fa-list\"></i>Services",
       "#heading-nav4": "<i class=\"fas fa-briefcase\"></i>Portofolio",
-      "#heading-nav5": "<i class=\"fas fa-comments\"></i>Contact"
+      "#heading-nav5": "<i class=\"fas fa-comments\"></i>Contact",
+      "#heading-titel1": "Wael Wederni",
+      "#status": "i'm Software Engineer",
+      "#about-me": "about me\n                            <hr class=\"bgcolor-style long\">\n                            <hr class=\"bgcolor-style short\">",
+      "#about-me1": "i'm wael wederni and <span class=\"color-style\">Software Engineer</span>",
+      "#about-me2": "I'm wael wederni and Software Engineer\n                            I am a Software Engineer, and I'm very passionate and dedicated\n                            to my work. With 3 years experience as a Mobile developer (Android/Java/kotlin/flutter),\n                            I have acquired the skills and knowledge necessary to make your project a success.\n                            I enjoy every step of the design process, from discussion and collaboration.",
+      "#content0": "birthdat :<span class=\"text\">20/11/1997</span>",
+      "#content1": "age :<span class=\"text\">24</span>",
+      "#content2": "websits :<span class=\"text\">waelwederni.me",
+      "#content3": "email :<span class=\"text\">waelwederni4@gmail.com",
+      "#content4": "degree :<span class=\"text\">CIS</span>",
+      "#content5": "Phone :<span class=\"text\">+216 29 899 262 / +216 25 488 161",
+      "#content6": "city :<span class=\"text\">Tataouine</span>",
+      "#content7": "Freelance :<span class=\"text\">available</span>",
+      "#content8": "download CV",
+      "#content9": "hire me"
     },
     "fr": {
       "title": "Wael Wederni",
@@ -19,7 +34,22 @@
       "#heading-nav2": "<i class=\"fas fa-user\"></i>À propos",
       "#heading-nav3": "<i class=\"fas fa-list\"></i>Services",
       "#heading-nav4": "<i class=\"fas fa-briefcase\"></i>Portefeuille",
-      "#heading-nav5": "<i class=\"fas fa-comments\"></i>Contact"
+      "#heading-nav5": "<i class=\"fas fa-comments\"></i>Contact",
+      "#heading-titel1": "Wael Wederni",
+      "#status": "Ingénieur en informatique",
+      "#about-me": "about me\n                            <hr class=\"bgcolor-style long\">\n                            <hr class=\"bgcolor-style short\">",
+      "#about-me1": "i'm wael wederni and <span class=\"color-style\">Software Engineer</span>",
+      "#about-me2": "I'm wael wederni and Software Engineer\n                            I am a Software Engineer, and I'm very passionate and dedicated\n                            to my work. With 3 years experience as a Mobile developer (Android/Java/kotlin/flutter),\n                            I have acquired the skills and knowledge necessary to make your project a success.\n                            I enjoy every step of the design process, from discussion and collaboration.",
+      "#content0": "birthdat :<span class=\"text\">20/11/1997</span>",
+      "#content1": "age :<span class=\"text\">24</span>",
+      "#content2": "websits :<span class=\"text\">waelwederni.me",
+      "#content3": "email :<span class=\"text\">waelwederni4@gmail.com",
+      "#content4": "degree :<span class=\"text\">CIS</span>",
+      "#content5": "Phone :<span class=\"text\">+216 29 899 262 / +216 25 488 161",
+      "#content6": "city :<span class=\"text\">Tataouine</span>",
+      "#content7": "Freelance :<span class=\"text\">available</span>",
+      "#content8": "download CV",
+      "#content9": "hire me"
     }
   }
 }
