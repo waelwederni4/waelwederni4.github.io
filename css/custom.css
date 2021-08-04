@@ -474,6 +474,7 @@ body.en {
     transition: all 0.4s ease;
     background: var(--BCLight-light);
 }
+.sidebar li a.active,
 .sidebar li a:hover{
     background: var(--blueColor);
 }

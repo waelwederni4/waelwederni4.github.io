@@ -41,6 +41,7 @@
     background: var(--BCDark-dark);
 }
 .parent.dark .topnav,
+.parent.dark .parnet-sections .section-one ul.soical-icons li,
 .parent.dark .sidebar{
     border-right:1px solid var(--BCLight-dark);
     background-color: var(--SlideDark);
@@ -61,7 +62,11 @@
 .parent.dark .nav-bar .row li[class="heading"],
 .parent.dark .section-five .content .foot input,
 .parent.dark .section-five .content .foot textarea {
-    color: white;
+    color: var(--text-dark);
+}
+.parent.dark .sidebar li a.active,
+.parent.dark .sidebar li a:hover{
+    background: var(--text-light);
 }
 .parent.dark .sidebar .logo-details .icon{
     content: url("../imgs/logoDark.png");

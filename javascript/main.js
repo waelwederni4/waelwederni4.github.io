@@ -1,6 +1,18 @@
 $(window).ready(function () {
+    const chk = document.getElementById('chk');
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector(".parnet-sections .topnav #btn");
+    let listItems = document.querySelectorAll('.soical-icons li');
+    const targetElemet = $(".parent .sidebar ul");
     $(function () {
-        function mainWidth() {
+        let mode=localStorage.getItem("mode");
+        $(".parent").attr("class", "parent "+mode);
+        if (mode == "light") {
+            chk.checked = true;
+        }else{
+            chk.checked = false;
+        }
+      /*  function mainWidth() {
             const ele = $(".parent .sidebar");
             let winWidth = $(window).innerWidth();
             let remainWidth = winWidth - $(".parent .sidebar").outerWidth();
@@ -17,8 +29,8 @@ $(window).ready(function () {
         mainWidth()
         $(window).resize(function () {
             mainWidth()
-        })
-        function stopPropagation(target) {
+        })*/
+        /*function stopPropagation(target) {
             target.on("click", function (e) {
                 e.stopPropagation(); //important
             })
@@ -30,11 +42,10 @@ $(window).ready(function () {
             $('.parent .splash-overlay').addClass('display-none');
             $('.parent .splash').addClass('display-none');
             //$('.parent .custom-overlay').style.display=none;
-        },2000);
+        },2000);*/
+
     })
-    let sidebar = document.querySelector(".sidebar");
-    let closeBtn = document.querySelector(".parnet-sections .topnav #btn");
-    let listItems = document.querySelectorAll('.soical-icons li');
+
     listItems.forEach((item, index) => {
         item.addEventListener('click', (event) => {
             const str = event.currentTarget.innerHTML;
@@ -60,6 +71,16 @@ $(window).ready(function () {
             }
         })
     }
+    function loadPage() {
+        if(localStorage.getItem('mode')) {
+            let mode=localStorage.getItem("mode");
+            $(".parent").attr("class", "parent "+mode);
+        }
+        if(localStorage.getItem('lang')) {
+            MultiLanguage(localStorage.getItem('lang'));
+        }
+    }
+    $(window).onload=loadPage;
     function MultiLanguage(c) {
         var b = this;
         if (c == null) {
@@ -95,7 +116,8 @@ $(window).ready(function () {
     }
     $("input[type='radio'][name='language-switch1']").on("click", function () {
         const lang= $("input[type='radio'][name='language-switch1']:checked").val();
-        MultiLanguage(lang)
+        localStorage.setItem("lang",lang);
+        MultiLanguage(lang);
     })
 //translate setting section
     $(".parnet-sections .setting .icon").on("click", function () {
@@ -110,20 +132,23 @@ $(window).ready(function () {
             }).children(".icon").addClass("active")
         }
     })
-    const targetElemet = $(".parent .sidebar ul");
+
 //when click on nav-bar items
     $(".parent .sidebar  ul li").on("click", function () {
+        document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
         $(this).addClass("heading " + targetElemet.attr("class") + " active")
             .siblings().removeClass("" + targetElemet.attr("class") + " active")
+$(this).children().addClass("active")
     })
-    const chk = document.getElementById('chk');
 
     chk.addEventListener('change', () => {
         let parentstr = $(".parent").attr("class");
         if (parentstr == "parent light") {
             $(".parent").attr("class", "parent dark");
+            localStorage.setItem("mode","dark");
         } else {
             $(".parent").attr("class", "parent light");
+            localStorage.setItem("mode","light");
         }
     });
 
