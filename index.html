@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/darkMode.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title id="titel">Wael Wederni</title>
 </head>
 <body>
@@ -23,31 +23,53 @@
         <div class="splash">
             <img class="img-fluid center-block fade-in" src="imgs/splash.png"/>
         </div>
-        <!--start navBar section-->
-        <div class="nav-bar">
-                <div class="container">
-                <i class="color-style fas fa-bars"></i>
-                <div class="txt">
-                    <h1 id="heading-titel0" class="heading">
-                        <span class="part after bgcolor-style"></span>
-                        Wael Wederni
-                        <span class="part before bgcolor-style"></span>
-                    </h1>
-                </div>
-                <div class="row">
-                    <ul class="blueColor">
-                        <li id="heading-nav1" class="heading blueColor active"><i class="fas fa-home"></i>home</li>
-                        <li id="heading-nav2" class="heading"><i class="fas fa-user"></i>about</li>
-                        <li id="heading-nav3" class="heading"><i class="fas fa-list"></i>services</li>
-                        <li id="heading-nav4" class="heading"><i class="fas fa-briefcase"></i>portofolio</li>
-                        <li id="heading-nav5" class="heading"><i class="fas fa-comments"></i>contact</li>
-                    </ul>
-                </div>
+        <div class="sidebar">
+            <div class="logo-details">
+                <img class="icon" src="imgs/logo.png" />
+                 <div class="logo_name">Wael Wederni</div>
             </div>
+            <ul class="nav-list">
+                <li class="heading active">
+                    <a href="#">
+                        <i class="bx bx-home"></i>
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li id="heading-nav2" class="heading">
+                    <a href="#">
+                        <i class='bx bx-user' ></i>
+                        <span class="links_name">About</span>
+                    </a>
+                    <span class="tooltip">About</span>
+                </li>
+                <li id="heading-nav3" class="heading">
+                    <a href="#">
+                        <i class='bx bx-list-ul' ></i>
+                        <span class="links_name">Services</span>
+                    </a>
+                    <span class="tooltip">Services</span>
+                </li>
+                <li id="heading-nav4" class="heading">
+                    <a href="#">
+                        <i class='bx bx-briefcase' ></i>
+                        <span class="links_name">Portofolio</span>
+                    </a>
+                    <span class="tooltip">Portofolio</span>
+                </li>
+                <li id="heading-nav5" class="heading">
+                    <a href="#">
+                        <i class='bx bx-message-square-dots' ></i>
+                        <span class="links_name">Contact</span>
+                    </a>
+                    <span class="tooltip">Contact</span>
+                </li>
+            </ul>
         </div>
-        <!--end navBar section-->
-        <header>
-            <nav>
+        <!--start parnet-sections-->
+        <div class="parnet-sections">
+            <div class="topnav">
+                <i class='bx bx-menu' id="btn" ></i>
                 <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
                     <div class="language__container--left language__container--fr">
                         <input class="language__control" type="radio" id="fr" value="fr" name="language-switch1">
@@ -71,12 +93,7 @@
 
                     </label>
                 </div>
-            </nav>
-        </header>
-        <!--start parnet-sections-->
-        <div class="parnet-sections">
-
-
+            </div>
             <!--end setting section-->
             <!--start section one -->
             <div class="section-one center section heading-nav1 active">
@@ -86,7 +103,12 @@
                             <div class="img"></div>
                         </div>
                         <h1 id="heading-titel1" class="heading">Wael Wederni</h1>
-                        <p id="status" class="text">i'm Software Engineer</p>
+                        <div class="wrapper">
+                            <div class="static-txt text">I'm a</div>
+                            <ul class="dynamic-txts">
+                                <li><span>Software Engineer</span></li>
+                            </ul>
+                        </div>
                         <ul class="soical-icons">
                             <li class="bgcolor-style"><i class="fab fa-facebook-f"></i></li>
                             <li class="bgcolor-style"><i class="fab fa-twitter"></i></li>
@@ -171,7 +193,7 @@
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2017-2018</span>
                                     <h4 class="heading">Computer Science</h4>
                                     <p class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
                                         nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                     </p>
                                 </div>
@@ -180,7 +202,7 @@
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2018-2022</span>
                                     <h4 class="heading">Studing At CIS</h4>
                                     <p class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
                                         nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                     </p>
                                 </div>
@@ -189,7 +211,7 @@
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2022-2022</span>
                                     <h4 class="heading">Bachelor Degree</h4>
                                     <p class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
                                         nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                     </p>
                                 </div>
@@ -204,7 +226,7 @@
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2017-2019</span>
                                     <h4 class="heading">networking</h4>
                                     <p class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
                                         nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                     </p>
                                 </div>
@@ -213,7 +235,7 @@
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2019-2020</span>
                                     <h4 class="heading">information technology</h4>
                                     <p class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
                                         nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                     </p>
                                 </div>
@@ -222,7 +244,7 @@
                                     <span class="text"><i class="fas fa-calendar-alt"></i>2020-2021</span>
                                     <h4 class="heading">front-end developer</h4>
                                     <p class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non 
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
                                         nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                     </p>
                                 </div>

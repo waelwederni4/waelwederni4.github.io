@@ -1,9 +1,9 @@
 $(window).ready(function () {
     $(function () {
         function mainWidth() {
-            const ele = $(".parent .nav-bar");
+            const ele = $(".parent .sidebar");
             let winWidth = $(window).innerWidth();
-            let remainWidth = winWidth - $(".parent .nav-bar").outerWidth();
+            let remainWidth = winWidth - $(".parent .sidebar").outerWidth();
             if (winWidth <= 1200) {
                 ele.addClass("active")
                 $(".parent .parnet-sections").css("width", winWidth)
@@ -14,13 +14,26 @@ $(window).ready(function () {
                 $(".parent .section-four .container .over-lay").css("width", remainWidth)
             }
         }
-
         mainWidth()
         $(window).resize(function () {
             mainWidth()
         })
+        function stopPropagation(target) {
+            target.on("click", function (e) {
+                e.stopPropagation(); //important
+            })
+        }
+        stopPropagation($(".color-style.fas.fa-bars"))
+        stopPropagation($(".parent .sidebar"))
+        stopPropagation($(".parent .parnet-sections .setting"))
+        setTimeout(()=>{
+            $('.parent .splash-overlay').addClass('display-none');
+            $('.parent .splash').addClass('display-none');
+            //$('.parent .custom-overlay').style.display=none;
+        },2000);
     })
-
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector(".parnet-sections .topnav #btn");
     let listItems = document.querySelectorAll('.soical-icons li');
     listItems.forEach((item, index) => {
         item.addEventListener('click', (event) => {
@@ -32,7 +45,21 @@ $(window).ready(function () {
             else if (str.includes("github")) window.location.replace("https://github.com/waelwederni4");
         });
     });
-
+    function menuBtnChange() {
+        if(sidebar.classList.contains("open")){
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        }else {
+            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+        }
+    }
+    function closeNavBar(target) {
+        target.on("click", function () {
+            if(sidebar.classList.contains("open")) {
+                sidebar.classList.toggle("open");
+                menuBtnChange();
+            }
+        })
+    }
     function MultiLanguage(c) {
         var b = this;
         if (c == null) {
@@ -83,9 +110,9 @@ $(window).ready(function () {
             }).children(".icon").addClass("active")
         }
     })
-    const targetElemet = $(".parent .nav-bar .row ul");
+    const targetElemet = $(".parent .sidebar ul");
 //when click on nav-bar items
-    $(".parent .nav-bar .row ul li").on("click", function () {
+    $(".parent .sidebar  ul li").on("click", function () {
         $(this).addClass("heading " + targetElemet.attr("class") + " active")
             .siblings().removeClass("" + targetElemet.attr("class") + " active")
     })
@@ -104,14 +131,14 @@ $(window).ready(function () {
     $(".color-style.fas.fa-bars").on("click", function () {
         $(this).toggleClass("fa-times active");
         if ($(this).hasClass("active")) {
-            $(".parent .nav-bar").addClass("translated")
+            $(".parent .sidebar").addClass("translated")
         } else {
-            $(".parent .nav-bar").removeClass("translated")
+            $(".parent .sidebar").removeClass("translated")
         }
     })
 
 //switch between sections
-    $(".parent .nav-bar .row ul li").on("click", function () {
+    $(".parent .sidebar  ul li").on("click", function () {
         let name="heading-nav"+($(this).index()+1);
         let ele = $("." +name );
         ele.css("z-index", "9").animate({
@@ -163,32 +190,10 @@ $(window).ready(function () {
             })
             .attr("src", ele)
     })
-    $(function () {
-        function closeNavBar(target) {
-            target.on("click", function () {
-                $(".nav-bar").attr("class", "nav-bar active");
-                $(".color-style.fas.fa-bars").removeClass("fa-times active")
-            })
-        }
-
-        closeNavBar($(window))
-        closeNavBar($(".parent .nav-bar .row ul li"))
-
+    $(".parent .topnav #btn").on("click", function () {
+        sidebar.classList.toggle("open");
+        menuBtnChange();
     })
-
-//stop propagation
-    $(function () {
-        function stopPropagation(target) {
-            target.on("click", function (e) {
-                e.stopPropagation(); //important
-            })
-        }
-        stopPropagation($(".color-style.fas.fa-bars"))
-        stopPropagation($(".parent .nav-bar"))
-        stopPropagation($(".parent .parnet-sections .setting"))
-        setTimeout(()=>{
-            $('.parent .splash').addClass('display-none');
-        },2000);
-    })
-    
+    closeNavBar($(".parent .section"))
+    closeNavBar($(".parent .sidebar  ul li"))
 })

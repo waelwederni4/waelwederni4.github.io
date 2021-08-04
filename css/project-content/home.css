@@ -3,123 +3,24 @@
     height: 100vh;
     display: flex;
 }
-.parent .nav-bar {
-    width: 400px;
-    height: 100%;
-    border-right:1px solid var(--borderLight-light);
-    position: relative;
-    z-index: 99999;
-    background-color: var(--BCDark-light);
-}
 
-.parent .nav-bar .fa-bars,
-.parent .nav-bar .fa-times{
+.parent .sidebar .logo-details .part {
+
     position: absolute;
-    color: var(--blueColor);
-    top:10px;
-    right: -50px;
-    width: 40px;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    border: 1px solid var(--borderDark-light);
-    cursor: pointer;
-    display: none;
-    background-color: white;
-}
-
-.parent .nav-bar .txt {
-    padding:100px 0 150px 0;
-}
-
-.parent .nav-bar .txt h1{
-    text-align: center;
-    font-size: 55px;
-    width: 230px;
-    position: relative;
-    margin: auto;
-    background-color: var(--BCDark-light);
-}
-
-.parent .nav-bar .txt h1 .part {
-    position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     z-index: -1;
     background-color: var(--blueColor);
 }
 
-.parent .nav-bar .txt h1 .part.after {
+.parent .sidebar .logo-details .part.after {
     right: -7px;
     bottom: -7px;
 }
 
-.parent .nav-bar .txt h1 .part.before {
+.parent .sidebar .logo-details .part.before {
     top:-7px;
     left:-7px;
-}
-
-.parent .nav-bar .row {
-    margin:0 30px;
-}
-
-.parent .nav-bar .row ul {
-    width: 100%;
-    list-style: none;
-}
-
-.parent .nav-bar .row ul li {
-    padding: 13px 20px;
-    padding-left: 0;
-    font-size: 22px;
-    border-bottom: 1px solid var(--borderLight-light);
-    cursor: pointer;
-    transition: 0.5s ease-in-out padding-left;
-}
-
-.parent .nav-bar .row ul li i {
-    margin-right: 15px;
-}
-
-.parent .nav-bar .row ul li:hover {
-    padding-left: 25px;
-}
-
-.parent .nav-bar .row ul.redColor li:hover {
-    color: var(--blueColor);
-}
-.parent .nav-bar .row ul.blueColor li:hover {
-    color: var(--blueColor);
-}
-.parent .nav-bar .row ul.OrangeColor li:hover {
-    color: var(--OrangeColor);
-}
-.parent .nav-bar .row ul.YellowColor li:hover {
-    color: var(--YellowColor);
-}
-.parent .nav-bar .row ul.greenColor li:hover {
-    color: var(--greenColor);
-}
-
-.parent .nav-bar .row li.redColor {
-    color:var(--redColor)
-}
-
-.parent .nav-bar .row li.blueColor {
-    color:var(--blueColor)
-}
-
-.parent .nav-bar .row li.OrangeColor {
-    color:var(--OrangeColor)
-}
-
-.parent .nav-bar .row li.YellowColor {
-    color:var(--YellowColor)
-}
-
-.parent .nav-bar .row li.greenColor {
-    color:var(--greenColor)
 }
 
 /*start parent sections*/
@@ -127,7 +28,7 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-color: var(--BCLight-light)
+    background-color: var(--BCLight-light);
 }
 
 .parent .parnet-sections .section {
@@ -137,7 +38,7 @@
     transition: 0.5s ease-in-out left;
     left: 100%;
     overflow:auto;
-    background-color: var(--BCDark-light);
+    background-color: var(--BCLight-light);
 }
 
 .parent .parnet-sections .section.active {
@@ -260,8 +161,18 @@
     margin-bottom: 30px;
     background-color: white;
     overflow: hidden;
+    animation: 1s both 0s 1 slideInFromLeft;
+    transition: 1s ease-in-out slideInFromLeft;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 .parent .parnet-sections .section-one .main-img .img {
     background: url(../../imgs/about.jpg) no-repeat center center;
     background-size:cover;
@@ -284,6 +195,58 @@
     margin-bottom: 25px;
 }
 
+.wrapper{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper .static-txt{
+    font-size: 20px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    list-style: none;
+    color: var(--blueColor);
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 30px;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--BCLight-light);
+    border-left: 2px solid var(--blueColor);
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
 .parent .parnet-sections .section-one ul.soical-icons li {
     list-style: none;
     display: inline-block;

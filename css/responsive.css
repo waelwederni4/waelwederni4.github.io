@@ -1,27 +1,27 @@
 @media (max-width:1200px) {
-    .parent .nav-bar {
+    .parent .sidebar {
         position: fixed;
-        left: -400px;
+        left: 0px;
         z-index: 999999;
         transition: 0.5s ease-in-out left;
 
     }
-    .parent .nav-bar.translated {
-        left: 0px;
-    }
-
-    .parent .nav-bar .fa-bars {
-        display: block;
-        z-index: 99999999999;
-    }
 }
 
 @media (max-width:453px) {
-    .parent .nav-bar {
+    .parent .sidebar {
         width: 290px;
         left: -290px;
+        height: 100%;
+    }
+    .parent .sidebar.open {
+        left: 0px;
     }
 
+    .parent .parnet-sections .topnav .btn {
+        display: block;
+        z-index: 9999999999999999999999;
+    }
 }
 
 @media (max-width:992px) {

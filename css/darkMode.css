@@ -12,12 +12,12 @@
     padding: 10px;
 }
 
-.parent.dark .section-four .content .grid .bord
+.parent.dark .section-four .content .grid .bord,
 .parent.dark .parnet-sections .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
 .parent.dark .section-five .content .foot input,
 .parent.dark .section-five .content .foot textarea,
-.parent.dark .nav-bar{
+.parent.dark .sidebar{
     border: none;
 }
 
@@ -25,8 +25,7 @@
     background-color: var(--BCDark-dark);
 }
 
-.parent.dark .nav-bar,
-.parent.dark .nav-bar h1,
+
 .parent.dark .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
 .parent.dark .section-four .content .grid .bord,
@@ -35,9 +34,24 @@
 .parent.dark .section-five .content .head .bord {
     background-color: var(--BCLight-dark);
 }
-
+.parent.dark .sidebar li a{
+    background-color: var(--heading-light);
+}
+.parent.dark .section-one .dynamic-txts li span::after{
+    background: var(--BCDark-dark);
+}
+.parent.dark .topnav,
+.parent.dark .sidebar{
+    border-right:1px solid var(--BCLight-dark);
+    background-color: var(--SlideDark);
+}
+.parent.dark .sidebar li a i,
+.parent.dark .sidebar li a .links_name,
+.parent.dark .sidebar .logo-details .logo_name,
+.parent.dark .parnet-sections .topnav #btn,
 .parent.dark .parnet-sections .section h1,
 .parent.dark .parnet-sections .section p,
+.parent.dark .parnet-sections .section .wrapper .static-txt,
 .parent.dark .parnet-sections .section i,
 .parent.dark .parnet-sections .section h4,
 .parent.dark .parnet-sections .section span,
@@ -48,4 +62,7 @@
 .parent.dark .section-five .content .foot input,
 .parent.dark .section-five .content .foot textarea {
     color: white;
+}
+.parent.dark .sidebar .logo-details .icon{
+    content: url("../imgs/logoDark.png");
 }
