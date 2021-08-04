@@ -9,7 +9,7 @@ $(window).ready(function () {
         $(".parent").attr("class", "parent "+mode);
         if (mode == "light") {
             chk.checked = true;
-        }else{
+        }else if(mode == "dark"){
             chk.checked = false;
         }
       /*  function mainWidth() {

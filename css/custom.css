@@ -395,6 +395,16 @@ body.en {
     position: relative;
     object-position: center top;
     display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon{
+    position: relative;
+    object-position: center top;
+    display: block;
+    width: 60px;
     margin-left: auto;
     margin-right: auto;
     transition: all 0.5s ease;
