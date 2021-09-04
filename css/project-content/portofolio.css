@@ -70,10 +70,10 @@
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(2,auto);
     justify-content: space-between;
-    grid-row-gap: 30px;
-    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .parent .section-four .content .grid.short{
@@ -116,21 +116,14 @@
     opacity:0.8
 }
 
-.parent .section-four .content .grid .bord .overlay h2,
-.parent .section-four .content .grid .bord .overlay i{
-    position: absolute;
-    transition: 0.2s ease-in-out;
-    transition-property: left,right;
-}
-
 .parent .section-four .content .grid .bord .overlay h2 {
     top:20px;
     left: -150px;
     font-size:27px;
 }
 
-.parent .section-four .content .grid .bord .overlay i {
-    right: -60px;
+.parent .section-four .content .grid .bord .info i {
+    right: -90px;
     bottom:20px;
     width: 55px;
     text-align: center;
@@ -187,12 +180,13 @@
     transform: rotate3d(1, 0, 0, 90deg);
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 50px;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0   ;
     border-radius: 4px;
-    pointer-events: none;
     background-color:rgba(33, 150, 243, 0.9); }
 
 .in-top .info {
@@ -313,61 +307,60 @@
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(-1, 0, 0, 104deg);
-        transform: rotate3d(-1, 0, 0, 104deg); } }
+        -webkit-transform: rotate3d(-1, 0, 0, 120deg);
+        transform: rotate3d(-1, 0, 0, 120deg); } }
 @keyframes out-top {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(-1, 0, 0, 104deg);
-        transform: rotate3d(-1, 0, 0, 104deg); } }
+        -webkit-transform: rotate3d(-1, 0, 0, 120deg);
+        transform: rotate3d(-1, 0, 0, 120deg); } }
 @-webkit-keyframes out-right {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(0, -1, 0, 104deg);
-        transform: rotate3d(0, -1, 0, 104deg); } }
+        -webkit-transform: rotate3d(0, -1, 0, 120deg);
+        transform: rotate3d(0, -1, 0, 120deg); } }
 @keyframes out-right {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(0, -1, 0, 104deg);
-        transform: rotate3d(0, -1, 0, 104deg); } }
+        -webkit-transform: rotate3d(0, -1, 0, 120deg);
+        transform: rotate3d(0, -1, 0, 120deg); } }
 @-webkit-keyframes out-bottom {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(1, 0, 0, 104deg);
-        transform: rotate3d(1, 0, 0, 104deg); } }
+        -webkit-transform: rotate3d(1, 0, 0, 120deg);
+        transform: rotate3d(1, 0, 0, 120deg); } }
 @keyframes out-bottom {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(1, 0, 0, 104deg);
-        transform: rotate3d(1, 0, 0, 104deg); } }
+        -webkit-transform: rotate3d(1, 0, 0, 120deg);
+        transform: rotate3d(1, 0, 0, 120deg); } }
 @-webkit-keyframes out-left {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(0, 1, 0, 104deg);
-        transform: rotate3d(0, 1, 0, 104deg); } }
+        -webkit-transform: rotate3d(0, 1, 0, 120deg);
+        transform: rotate3d(0, 1, 0, 120deg); } }
 @keyframes out-left {
     from {
         -webkit-transform: rotate3d(0, 0, 0, 0deg);
         transform: rotate3d(0, 0, 0, 0deg); }
     to {
-        -webkit-transform: rotate3d(0, 1, 0, 104deg);
-        transform: rotate3d(0, 1, 0, 104deg); } }
+        -webkit-transform: rotate3d(0, 1, 0, 120deg);
+        transform: rotate3d(0, 1, 0, 120deg); } }
 /* ========================================================================
   styles for demo purposes
 ======================================================================== */
-
 
 .parent .section-four .content .grid li {
     border: 1px solid var(--borderDark-light);
@@ -375,11 +368,11 @@
     padding: 7px;
     position: relative;
     overflow:hidden;
-    max-height: 300px;
-    max-width: 500px;
+    max-height: 600px;
+    max-width: 300px;
     float: left;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     margin: 7px;
     list-style: none; }
 .parent .section-four .content .grid li a {
@@ -403,9 +396,77 @@
     box-shadow: inset 0 2px 20px #e6ebed;
     text-align: center;
     font-size: 50px;
-    line-height: 200px; }
+    line-height: 50px; }
 .parent .section-four .content .grid li .normal img {
     pointer-events: none;
     width: 100%;
     height: 100%;
     fill: rgba(52, 73, 94, 0.2); }
+
+/******************************************************/
+
+.parent .section-four .over-lay .slider .gallery .gallery__item img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.parent .section-four .over-lay .slider .gallery {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: 66.6666666667%;
+}
+@media screen and (min-width: 600px) {
+    .parent .section-four .over-lay .slider .gallery {
+        padding-top: 400px;
+    }
+}
+.gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.gallery__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+}
+.gallery__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.gallery__selector:checked + .gallery__img {
+    opacity: 1;
+}
+.gallery__selector:checked ~ .gallery__thumb > img {
+    box-shadow: 0 0 0 3px #0be2f6;
+}
+.parent .section-four .over-lay .close {
+    position: absolute;
+    right: 32px;
+    top: 60px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+.parent .section-four .over-lay .close:hover {
+    opacity: 1;
+}
+.parent .section-four .over-lay .close:before, .parent .section-four .over-lay .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.parent .section-four .over-lay .close:before {
+    transform: rotate(45deg);
+}
+.parent .section-four .over-lay .close:after {
+    transform: rotate(-45deg);
+}

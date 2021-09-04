@@ -108,6 +108,7 @@ body.en {
     transform: translateY(-50%);
     text-align: center;
     cursor: pointer;
+    color: var(--BCLight-dark);
     transition: all 0.5s ease;
 }
 /*header h1 on all sections*/

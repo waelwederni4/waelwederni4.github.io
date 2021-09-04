@@ -104,7 +104,17 @@
 .parent .parnet-sections .section-two .foot .bord h1 {
     padding: 20px 0;
 }
-
+.parent .parnet-sections .section-two .head .txt {
+    margin-left: auto;
+    margin-right: auto;
+}
+.parent .parnet-sections .section-two .head .txt .h1 {
+    text-align: center;
+    font-size: 55px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
 .parent .parnet-sections .section-two .foot .bord .content {
     box-shadow: 0 0 15px 0px var(--boxShadow);
     padding: 25px 40px;

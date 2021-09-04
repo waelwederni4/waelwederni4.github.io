@@ -1,3 +1,4 @@
+
 $(window).ready(function () {
     const chk = document.getElementById('chk');
     let sidebar = document.querySelector(".sidebar");
@@ -6,43 +7,44 @@ $(window).ready(function () {
     const targetElemet = $(".parent .sidebar ul");
     $(function () {
         var nodes  = [].slice.call(document.querySelectorAll('.parent .section-four .content .grid li'), 0);
-
         function getDirection(ev, obj) {
             var w, h, x, y, d;
-
             w = obj.offsetWidth;
             h = obj.offsetHeight;
             x = (ev.pageX - obj.offsetLeft - (w / 2) * (w > h ? (h / w) : 1));
             y = (ev.pageY - obj.offsetTop - (h / 2) * (h > w ? (w / h) : 1));
             d = Math.round( Math.atan2(y, x) / 1.57079633 + 5 ) % 4;
-
             return d;
         }
 
         function addClass(ev, obj, state) {
             var direction, class_suffix;
-
             direction = getDirection(ev, obj);
             class_suffix = "";
-            obj.className = "";
-
+            if(obj.classList.contains("in-top"))obj.classList.remove("in-top");
+            if(obj.classList.contains("in-right"))obj.classList.remove("in-right");
+            if(obj.classList.contains("in-bottom"))obj.classList.remove("in-bottom");
+            if(obj.classList.contains("in-left"))obj.classList.remove("in-top");
+            if(obj.classList.contains("out-top"))obj.classList.remove("out-top");
+            if(obj.classList.contains("out-right"))obj.classList.remove("out-right");
+            if(obj.classList.contains("out-bottom"))obj.classList.remove("out-bottom");
+            if(obj.classList.contains("out-left"))obj.classList.remove("out-left");
             switch (direction) {
                 case 0 : class_suffix = '-top';    break;
                 case 1 : class_suffix = '-right';  break;
                 case 2 : class_suffix = '-bottom'; break;
                 case 3 : class_suffix = '-left';   break;
             }
-
             obj.classList.add(state + class_suffix);
         }
 
         // bind events
         nodes.forEach(function (el) {
-            el.addEventListener('mouseover', function (ev) {
+            el.addEventListener('mouseenter', function (ev) {
                 addClass(ev, this, 'in');
             }, false);
 
-            el.addEventListener('mouseout', function (ev) {
+            el.addEventListener('mouseleave', function (ev) {
                 addClass(ev, this, 'out');
             }, false);
         });
@@ -53,37 +55,7 @@ $(window).ready(function () {
         }else if(mode == "dark"){
             chk.checked = false;
         }
-      /*  function mainWidth() {
-            const ele = $(".parent .sidebar");
-            let winWidth = $(window).innerWidth();
-            let remainWidth = winWidth - $(".parent .sidebar").outerWidth();
-            if (winWidth <= 1200) {
-                ele.addClass("active")
-                $(".parent .parnet-sections").css("width", winWidth)
-                $(".parent .section-four .container .over-lay").css("width", winWidth)
-            } else {
-                $(".parent .parnet-sections").css("width", remainWidth);
-                ele.removeClass("active");
-                $(".parent .section-four .container .over-lay").css("width", remainWidth)
-            }
-        }
-        mainWidth()
-        $(window).resize(function () {
-            mainWidth()
-        })*/
-        /*function stopPropagation(target) {
-            target.on("click", function (e) {
-                e.stopPropagation(); //important
-            })
-        }
-        stopPropagation($(".color-style.fas.fa-bars"))
-        stopPropagation($(".parent .sidebar"))
-        stopPropagation($(".parent .parnet-sections .setting"))
-        setTimeout(()=>{
-            $('.parent .splash-overlay').addClass('display-none');
-            $('.parent .splash').addClass('display-none');
-            //$('.parent .custom-overlay').style.display=none;
-        },2000);*/
+
 
     })
 
@@ -218,18 +190,19 @@ $(this).children().addClass("active")
 
 //section-four filter items
     $(".parent .section-four .content .filter-list ul li").on("click", function () {
-        $(this).addClass("active").siblings().removeClass("active")
-        let item = $(".bord." + $(this).text());
-        const parent = $(".parent .section-four .content .grid").children()
-        if ($(this).text() == "all") {
+        $(this).addClass("active").siblings().removeClass("active");
+        const parent = $(".parent .section-four .content .grid").children();
+        var filters = $(this).data("filter");
+        if (filters == "all") {
             parent.fadeIn().parent().removeClass("short") // grid setting
-        } else {
+        }else {
+            let item = $(".parent .section-four .content .grid ."+ filters);
             parent.fadeOut(function () {
                 parent.parent().addClass("short")
             })
-            item.delay(400).fadeIn()
+            item.delay(300).fadeIn();
         }
-    })
+    });
     $(".language__container--fr").on("click", function () {
         let fr = document.getElementById("fr");
         let en = document.getElementById("en");
@@ -244,18 +217,26 @@ $(this).children().addClass("active")
     })
 
 //section-four on click img
-    $(".parent .section-four .content .items .bord .fa-search").on("click", function () {
-        let ele = $(this).parent().siblings().attr("src")
+    $(".parent .section-four .content .items .bord .info").on("click", function () {
+        let ele = $(this).parent().children('a').children('img').attr("src");
+        const name=ele.replace("imgs/projects/","").replace("0.jpg","");
+        console.log(ele.replace("imgs/projects/","").replace("0.jpg",""))
         const overLay = $(".parent .section-four .over-lay");
-        overLay.fadeIn().css("display", "flex").on("click", function () {
-            $(this).fadeOut()
-        })
-        overLay.find(".slide")
-            .on("click", function (e) {
-                e.stopPropagation()
-            })
-            .attr("src", ele)
+        const close=$(".parent .section-four .over-lay .close");
+        overLay.fadeIn().css("display","flex");
+        close.on("click", function() { $(this).parent().fadeOut(); })
+        $.ajax({
+            url: "imgs/projects/"+name+"/",
+            success: function (data) {
+                var image_count = $(data).length();
+                console.log("Count :"+image_count)
+            }
+        });
+        /*overLay.find(".slide")
+            .on("click", function (e) { e.stopPropagation() })
+            .attr("src",ele)*/
     })
+
     $(".parent .topnav #btn").on("click", function () {
         sidebar.classList.toggle("open");
         menuBtnChange();
