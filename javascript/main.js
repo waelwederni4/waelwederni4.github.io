@@ -55,8 +55,6 @@ $(window).ready(function () {
         }else if(mode == "dark"){
             chk.checked = false;
         }
-
-
     })
 
     listItems.forEach((item, index) => {
@@ -127,6 +125,7 @@ $(window).ready(function () {
             return e
         });
     }
+
     $("input[type='radio'][name='language-switch1']").on("click", function () {
         const lang= $("input[type='radio'][name='language-switch1']:checked").val();
         localStorage.setItem("lang",lang);
@@ -216,6 +215,7 @@ $(this).children().addClass("active")
         en.checked = true;
     })
 
+
 //section-four on click img
     $(".parent .section-four .content .items .bord .info").on("click", function () {
         let ele = $(this).parent().children('a').children('img').attr("src");
@@ -224,17 +224,23 @@ $(this).children().addClass("active")
         const overLay = $(".parent .section-four .over-lay");
         const close=$(".parent .section-four .over-lay .close");
         overLay.fadeIn().css("display","flex");
-        close.on("click", function() { $(this).parent().fadeOut(); })
-        $.ajax({
-            url: "imgs/projects/"+name+"/",
-            success: function (data) {
-                var image_count = $(data).length();
-                console.log("Count :"+image_count)
+        close.on("click", function() { $(this).parent().fadeOut(); });
+        let vrai=true;
+        let i=1;
+        while (vrai){
+            console.log("imgs/projects/"+name+"/"+i+".jpg")
+            let image=new Image();
+            image.src="imgs/projects/"+name+"/"+i+".jpg";
+            image.onerror=function (){
+                vrai=false;
             }
-        });
-        /*overLay.find(".slide")
-            .on("click", function (e) { e.stopPropagation() })
-            .attr("src",ele)*/
+            if(image.width==0){vrai=false;}else{
+                overLay.find(".slider").find(".ullist")
+                    .append("<li><img class='rounded mx-auto d-block' src='imgs/projects/"+name+"/"+i+".jpg'/></li>");
+                i++;
+            }
+        }
+        overLay.find(".slider").flipster();
     })
 
     $(".parent .topnav #btn").on("click", function () {

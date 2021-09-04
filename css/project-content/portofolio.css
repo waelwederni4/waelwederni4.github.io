@@ -153,22 +153,9 @@
     top:0;
     right: 0;
     display: none;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
-}
-
-.parent .section-four .over-lay .slider {
-    max-width: 650px;
-    max-height: 650px;
-    margin: 0 40px;
-}
-
-.parent .section-four .over-lay .slide {
-    width:100%;
-    height:100%;
-    background-color: var(--BCDark-light);
-    padding: 5px;
-    border-radius: 5px;
 }
 /************************/
 .parent .section-four .content .grid li {
@@ -380,9 +367,9 @@
     vertical-align: top;
     text-decoration: none;
     border-radius: 4px; }
-.parent .section-four .content .grid li h3 {
+.parent .section-four .content .grid li h2 {
     margin: 0;
-    font-size: 16px;
+
     color: rgba(255, 255, 255, 0.9); }
 .parent .section-four .content .grid li p {
     font-size: 12px;
@@ -404,46 +391,14 @@
     fill: rgba(52, 73, 94, 0.2); }
 
 /******************************************************/
-
-.parent .section-four .over-lay .slider .gallery .gallery__item img {
-    max-width: 100%;
-    vertical-align: top;
+.parent .section-four .over-lay .slider {
+    width:300px;
+    margin:100px;
+    padding: 80px;
+    overflow: visible;
 }
-
-.parent .section-four .over-lay .slider .gallery {
-    display: flex;
-    margin: 10px auto;
-    max-width: 600px;
-    position: relative;
-    padding-top: 66.6666666667%;
-}
-@media screen and (min-width: 600px) {
-    .parent .section-four .over-lay .slider .gallery {
-        padding-top: 400px;
-    }
-}
-.gallery__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.gallery__thumb {
-    padding-top: 6px;
-    margin: 6px;
-    display: block;
-}
-.gallery__selector {
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-}
-.gallery__selector:checked + .gallery__img {
-    opacity: 1;
-}
-.gallery__selector:checked ~ .gallery__thumb > img {
-    box-shadow: 0 0 0 3px #0be2f6;
+.parent .section-four .over-lay .slider img{
+    -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
 }
 .parent .section-four .over-lay .close {
     position: absolute;

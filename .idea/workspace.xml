@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022cf25c-218b-43ff-886b-e5b9264c9ea6" name="Default Changelist" comment="edit">
-      <change afterPath="$PROJECT_DIR$/css/material-photo-gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/jquery.flipster.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/projects/baladiti0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/jquery.flipster.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project-content/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project-content/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/material-photo-gallery.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/project-content/portofolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/portofolio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/portfolio/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/portfolio/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/projects/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/portfolio/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/projects/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/portfolio/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/projects/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/portfolio/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/projects/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/portfolio/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/projects/6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
     </list>
@@ -43,17 +48,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/javascript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/imgs/projects/baladiti" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects\baladiti" />
+      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\javascript" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\css" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs" />
-      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io" />
-      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\flags" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects" />
+      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +98,7 @@
       <workItem from="1630505467443" duration="4943000" />
       <workItem from="1630679080717" duration="8030000" />
       <workItem from="1630720803315" duration="1963000" />
-      <workItem from="1630754837223" duration="1560000" />
+      <workItem from="1630754837223" duration="13309000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1624658718736</created>
@@ -259,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628124926468</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="edit">
+      <created>1630756560908</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1630756560908</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
