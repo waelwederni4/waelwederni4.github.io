@@ -220,15 +220,16 @@ $(this).children().addClass("active")
     $(".parent .section-four .content .items .bord .info").on("click", function () {
         let ele = $(this).parent().children('a').children('img').attr("src");
         const name=ele.replace("imgs/projects/","").replace("0.jpg","");
-        console.log(ele.replace("imgs/projects/","").replace("0.jpg",""))
         const overLay = $(".parent .section-four .over-lay");
         const close=$(".parent .section-four .over-lay .close");
         overLay.fadeIn().css("display","flex");
-        close.on("click", function() { $(this).parent().fadeOut(); });
+        close.on("click", function() { $(this).parent().fadeOut();
+            overLay.find(".slider").remove();
+            overLay.append(" <div class='slider'><ul class='ullist'></ul></div>")
+        });
         let vrai=true;
         let i=1;
         while (vrai){
-            console.log("imgs/projects/"+name+"/"+i+".jpg")
             let image=new Image();
             image.src="imgs/projects/"+name+"/"+i+".jpg";
             image.onerror=function (){
