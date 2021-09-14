@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="022cf25c-218b-43ff-886b-e5b9264c9ea6" name="Default Changelist" comment="edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project-content/portofolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/portofolio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
     </list>
@@ -32,16 +33,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imgs/projects/baladiti" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\css" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects\baladiti" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\javascript" />
-      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\css" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

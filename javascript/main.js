@@ -150,7 +150,7 @@ $(window).ready(function () {
         document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
         $(this).addClass("heading " + targetElemet.attr("class") + " active")
             .siblings().removeClass("" + targetElemet.attr("class") + " active")
-$(this).children().addClass("active")
+        $(this).children().addClass("active")
     })
 
     chk.addEventListener('change', () => {
@@ -217,10 +217,12 @@ $(this).children().addClass("active")
 
 
 //section-four on click img
-    $(".parent .section-four .content .items .bord .info").on("click", function () {
-        let ele = $(this).parent().children('a').children('img').attr("src");
+    $(".parent .section-four .content .items .bord .info .box").on("click", function () {
+        let ele = $(this).parent().parent().children('a').children('img').attr("src");
         const name=ele.replace("imgs/projects/","").replace("0.jpg","");
         const overLay = $(".parent .section-four .over-lay");
+        const elemName=$(this).parent().parent().attr('class').split(" ")[1];
+        overLay.find(".slider").addClass(elemName);
         const close=$(".parent .section-four .over-lay .close");
         overLay.fadeIn().css("display","flex");
         close.on("click", function() { $(this).parent().fadeOut();
@@ -229,6 +231,10 @@ $(this).children().addClass("active")
         });
         let vrai=true;
         let i=1;
+        overLay.find(".slider").find(".ullist").append("<li><video class='VideoProj' autoplay muted loop controls><source src='imgs/projects/"+name+"/"+0+".mp4' type='video/mp4'></video></li>")
+        overLay.find(".slider").find(".ullist").find("li").find(".VideoProj").find("source").on('error', function() {
+            $(this).parent().parent().remove();
+        });
         while (vrai){
             let image=new Image();
             image.src="imgs/projects/"+name+"/"+i+".jpg";
@@ -241,7 +247,10 @@ $(this).children().addClass("active")
                 i++;
             }
         }
-        overLay.find(".slider").flipster();
+        overLay.find(".slider").flipster({
+            style:'carousel',
+            spacing:-0.3,
+        });
     })
 
     $(".parent .topnav #btn").on("click", function () {
