@@ -219,7 +219,7 @@ $(window).ready(function () {
 //section-four on click img
     $(".parent .section-four .content .items .bord .info .box").on("click", function () {
         let ele = $(this).parent().parent().children('a').children('img').attr("src");
-        const name=ele.replace("imgs/projects/","").replace("0.jpg","");
+        const name=ele.replace("imgs/projects/","").replace("/0.jpg","");
         const overLay = $(".parent .section-four .over-lay");
         const elemName=$(this).parent().parent().attr('class').split(" ")[1];
         overLay.find(".slider").addClass(elemName);
@@ -235,24 +235,23 @@ $(window).ready(function () {
         overLay.find(".slider").find(".ullist").find("li").find(".VideoProj").find("source").on('error', function() {
             $(this).parent().parent().remove();
         });
-        while (vrai){
-            let image=new Image();
-            image.src="imgs/projects/"+name+"/"+i+".jpg";
-            image.onerror=function (){
-                vrai=false;
-            }
-            if(image.width==0){vrai=false;}else{
+        while (imageExists("imgs/projects/"+name+"/"+i+".jpg")){
                 overLay.find(".slider").find(".ullist")
                     .append("<li><img class='rounded mx-auto d-block' src='imgs/projects/"+name+"/"+i+".jpg'/></li>");
                 i++;
-            }
         }
         overLay.find(".slider").flipster({
             style:'carousel',
             spacing:-0.3,
         });
     })
+    function imageExists(image_url){
+        var http = new XMLHttpRequest();
+        http.open('HEAD', image_url, false);
+        http.send();
+        return http.status != 404;
 
+    }
     $(".parent .topnav #btn").on("click", function () {
         sidebar.classList.toggle("open");
         menuBtnChange();

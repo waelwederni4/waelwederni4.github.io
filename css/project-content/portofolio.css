@@ -333,6 +333,11 @@
     padding: 80px;
     overflow: visible;
 }
+.parent .section-four .over-lay .slider.desktop {
+    width:50%;
+    padding: 80px;
+    overflow: visible;
+}
 .parent .section-four .over-lay .slider {
     width:100%;
     overflow: visible;
