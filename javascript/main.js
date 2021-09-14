@@ -231,11 +231,10 @@ $(window).ready(function () {
         });
         let vrai=true;
         let i=1;
-        overLay.find(".slider").find(".ullist").append("<li><video class='VideoProj' autoplay muted loop controls><source src='imgs/projects/"+name+"/"+0+".mp4' type='video/mp4'></video></li>")
-        overLay.find(".slider").find(".ullist").find("li").find(".VideoProj").find("source").on('error', function() {
-            $(this).parent().parent().remove();
-        });
-        while (imageExists("imgs/projects/"+name+"/"+i+".jpg")){
+        if(ifExists("imgs/projects/"+name+"/"+0+".mp4")){
+            overLay.find(".slider").find(".ullist").append("<li><video class='VideoProj' autoplay muted loop controls><source src='imgs/projects/"+name+"/"+0+".mp4' type='video/mp4'></video></li>");
+        }
+        while (ifExists("imgs/projects/"+name+"/"+i+".jpg")){
                 overLay.find(".slider").find(".ullist")
                     .append("<li><img class='rounded mx-auto d-block' src='imgs/projects/"+name+"/"+i+".jpg'/></li>");
                 i++;
@@ -245,7 +244,7 @@ $(window).ready(function () {
             spacing:-0.3,
         });
     })
-    function imageExists(image_url){
+    function ifExists(image_url){
         var http = new XMLHttpRequest();
         http.open('HEAD', image_url, false);
         http.send();
