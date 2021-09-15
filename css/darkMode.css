@@ -24,6 +24,18 @@
 .parent.dark .parnet-sections .section {
     background-color: var(--BCDark-dark);
 }
+.parent.dark .section-one .containerFirst .boxFirst {
+    border-radius: 20px;
+    width: 580px;
+    height: 580px;
+    background: var(--SlideDark);
+    box-shadow: 10px 10px 10px #3d3d3d,
+    10px 10px 10px #222222,
+    0 0 0 #797979 inset,
+    0 0 0 #222222 inset;
+    animation: animeDark 3.5s cubic-bezier(0.16, 1, 0.3, 1);
+    /* animation-fill-mode: forwards; */
+}
 
 
 .parent.dark .section-two .foot .bord .content,
@@ -38,15 +50,17 @@
     background-color: var(--heading-light);
 }
 .parent.dark .section-one .dynamic-txts li span::after{
-    background: var(--BCDark-dark);
+    background: var(--SlideDark);
 }
 .parent.dark .topnav,
-.parent.dark .parnet-sections .section-one ul.soical-icons li,
 .parent.dark .sidebar{
     border-right:1px solid var(--BCLight-dark);
     background-color: var(--SlideDark);
 }
-
+.parent.dark .parnet-sections .section-one ul.soical-icons li{
+    border-right:1px solid var(--BCLight-dark);
+    background-color: var(--heading-light);
+}
 .parent.dark .sidebar li a i,
 .parent.dark .sidebar li a .links_name,
 .parent.dark .sidebar .logo-details .logo_name,
@@ -109,5 +123,35 @@
         height: 64px;
         border-radius: 0px;
         top: 26px;
+    }
+}
+@keyframes animeDark {
+    0% {
+        background: var(--BCDark-dark);
+        box-shadow: 0 0 0 #3d3d3d,
+        0 0 0 #222222,
+        10px 10px 10px #797979 inset,
+        -10px -10px 10px #222222 inset;
+    }
+    25% {
+        background: var(--SlideDark);
+        box-shadow: 10px 10px 10px #3d3d3d,
+        10px 10px 10px #222222,
+        0 0 0 #797979 inset,
+        0 0 0 #222222 inset;
+    }
+    50% {
+        background: var(--SlideDark);
+        box-shadow: 10px 10px 10px #3d3d3d,
+        10px 10px 10px #222222,
+        0 0 0 #797979 inset,
+        0 0 0 #222222 inset;
+    }
+    100% {
+        background: var(--SlideDark);
+        box-shadow: 10px 10px 10px #3d3d3d,
+        10px 10px 10px #222222,
+        0 0 0 #797979 inset,
+        0 0 0 #222222 inset;
     }
 }
