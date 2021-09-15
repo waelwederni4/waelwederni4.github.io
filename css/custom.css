@@ -45,7 +45,65 @@ body.en {
     text-align:left;
     background-color: var(--BCLight-light);
 }
+.parent .parnet-sections .section::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
 
+.parent .parnet-sections .section::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.parent .parnet-sections .section .row  .txt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.parent .parnet-sections .section .row .txt h1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+    width: 350px;
+    position: relative;
+    margin: auto;
+    background-color: var(--BCLight-light);
+}
+
+.parent .parnet-sections .section .row .txt h1 .part {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    background-color: var(--blueColor);
+}
+
+.parent .parnet-sections .section .row .txt h1 .part.after {
+    right: -7px;
+    bottom: -7px;
+}
+
+.parent .parnet-sections .section .row .txt h1 .part.before {
+    top:-7px;
+    left:-7px;
+}
+.parent .parnet-sections .section::-webkit-scrollbar-thumb
+{
+    background-color: var(--blueColor);
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
 .heading {
     color: var(--heading-light);
     font-weight: normal;
@@ -111,26 +169,6 @@ body.en {
     color: var(--BCLight-dark);
     transition: all 0.5s ease;
 }
-/*header h1 on all sections*/
-.parent .parnet-sections .section .row h1.top {
-    font-size: 50px;
-    font-weight: bolder;
-    margin-bottom: 50px;
-}
-
-.parent .parnet-sections .section .row h1.top hr{
-    margin: 0;
-    margin-bottom: 5px;
-    height: 4px;
-    width: 65px;
-    background-color: var(--blueColor);
-    border: none;
-}
-
-.parent .parnet-sections .section .row h1 hr.short {
-    width: 45px;
-}
-/*header h1 on all sections*/
 /*all sections configurations*/
 
 

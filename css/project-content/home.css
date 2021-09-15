@@ -3,25 +3,6 @@
     height: 100vh;
     display: flex;
 }
-
-.parent .parnet-sections .section-two .head .txt .h1 .part {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    z-index: auto;
-    background-color: var(--blueColor);
-}
-
-.parent .parnet-sections .section-two .head .txt .h1 .part.after {
-    right: -7px;
-    bottom: -7px;
-}
-
-.parent .parnet-sections .section-two .head .txt .h1 .part.before {
-    top:-7px;
-    left:-7px;
-}
-
 /*start parent sections*/
 .parnet-sections{
     height: 100%;
@@ -145,6 +126,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: flex;
+    opacity: 1;
 }
 
 .parent .parnet-sections .section-one {
@@ -195,6 +178,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    animation: glitch 2s 2s infinite;
 }
 
 .parent .parnet-sections .section-one h1 {
@@ -214,6 +198,7 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    animation: glitch 2s 2s infinite;
 }
 .wrapper .static-txt{
     font-size: 20px;
@@ -378,17 +363,89 @@
     width: 100%;
     height: 100%;
 }
+.containerFirst .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+}
 .boxFirst {
     border-radius: 20px;
     width: 580px;
     height: 580px;
+    z-index: 99 ;
     background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 10px 10px 10px #cccccc,
     10px 10px 10px #ffffff,
     0 0 0 #cccccc inset,
     0 0 0 #ffffff inset;
     animation: anime 3.5s cubic-bezier(0.16, 1, 0.3, 1);
-    /* animation-fill-mode: forwards; */
 }
-
+.parent .parnet-sections .section-one .containerFirst .boxFirst .container .row.animer {
+    display: none;
+    opacity: 0;
+}
+@keyframes anime {
+    0% {
+        width: 60px;
+        height: 60px;
+        background: #f0f0f0;
+        box-shadow: 0 0 0 #cccccc,
+        0 0 0 #ffffff,
+        10px 10px 10px #cccccc inset,
+        -10px -10px 10px #ffffff inset;
+    }
+    25% {
+        width: 60px;
+        height: 60px;
+        background: #f8f8f8;
+        box-shadow: 10px 10px 10px #cccccc,
+        10px 10px 10px #ffffff,
+        0 0 0 #cccccc inset,
+        0 0 0 #ffffff inset;
+    }
+    50% {
+        width: 60px;
+        height: 240px;
+        background: #f8f8f8;
+        box-shadow: 10px 10px 10px #cccccc,
+        10px 10px 10px #ffffff,
+        0 0 0 #cccccc inset,
+        0 0 0 #ffffff inset;
+    }
+    100% {
+        width: 580px;
+        height: 580px;
+        background: #fafafa;
+        box-shadow: 40px 40px 40px #cccccc,
+        0 0 0 #ffffff,
+        0 0 0 #cccccc inset,
+        2px 2px 2px #ffffff inset;
+    }
+}
+/**********************************************************************/
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
 

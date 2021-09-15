@@ -49,6 +49,18 @@
 .parent.dark .sidebar li a{
     background-color: var(--heading-light);
 }
+.parent.dark .parnet-sections .section::-webkit-scrollbar-thumb
+{
+    background-color: var(--heading-light);
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
 .parent.dark .section-one .dynamic-txts li span::after{
     background: var(--SlideDark);
 }
@@ -127,6 +139,8 @@
 }
 @keyframes animeDark {
     0% {
+        width: 60px;
+        height: 60px;
         background: var(--BCDark-dark);
         box-shadow: 0 0 0 #3d3d3d,
         0 0 0 #222222,
@@ -134,6 +148,8 @@
         -10px -10px 10px #222222 inset;
     }
     25% {
+        width: 60px;
+        height: 60px;
         background: var(--SlideDark);
         box-shadow: 10px 10px 10px #3d3d3d,
         10px 10px 10px #222222,
@@ -141,6 +157,8 @@
         0 0 0 #222222 inset;
     }
     50% {
+        width: 60px;
+        height: 240px;
         background: var(--SlideDark);
         box-shadow: 10px 10px 10px #3d3d3d,
         10px 10px 10px #222222,
@@ -148,6 +166,8 @@
         0 0 0 #222222 inset;
     }
     100% {
+        width: 580px;
+        height: 580px;
         background: var(--SlideDark);
         box-shadow: 10px 10px 10px #3d3d3d,
         10px 10px 10px #222222,

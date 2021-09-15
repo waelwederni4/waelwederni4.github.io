@@ -8,6 +8,7 @@ $(window).ready(function () {
     var splashoverlay = document.getElementById('splash-overlay');
     var welcome = document.getElementById('welcome');
     $(function () {
+        setTimeout(function (){$(".parent .parnet-sections .section-one .containerFirst .boxFirst .container .row").removeClass("animer");},3000);
         setTimeout(function(){
             splashoverlay.style.display = 'none';
             splashoverlay.style.opacity = 0;
@@ -66,7 +67,6 @@ $(window).ready(function () {
             chk.checked = false;
         }
     })
-
     listItems.forEach((item, index) => {
         item.addEventListener('click', (event) => {
             const str = event.currentTarget.innerHTML;
@@ -141,29 +141,20 @@ $(window).ready(function () {
         localStorage.setItem("lang",lang);
         MultiLanguage(lang);
     })
-//translate setting section
-    $(".parnet-sections .setting .icon").on("click", function () {
-        const eleWidth = $(this).parent().outerWidth();
-        if ($(this).hasClass("active")) {
-            $(this).parent().animate({
-                right: -eleWidth + "px"
-            }).children(".icon").removeClass("active")
-        } else {
-            $(this).parent().animate({
-                right: 0
-            }).children(".icon").addClass("active")
-        }
-    })
 
 //when click on nav-bar items
     $(".parent .sidebar  ul li").on("click", function () {
         document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
+        document.querySelectorAll('.parent .parnet-sections .section').forEach(elem => $(elem).removeClass("active"));
+        let id=$(this).attr('id');
         $(this).addClass("heading " + targetElemet.attr("class") + " active")
-            .siblings().removeClass("" + targetElemet.attr("class") + " active")
-        $(this).children().addClass("active")
+            .siblings().removeClass("" + targetElemet.attr("class") + " active");
+        $(this).children().addClass("active");
+        $(".parent .parnet-sections ."+id).addClass("active");
     })
 
     chk.addEventListener('change', () => {
+            chk.disabled=true;
         let parentstr = $(".parent").attr("class");
         if (parentstr == "parent light") {
             $(".parent").attr("class", "parent dark");
@@ -173,6 +164,15 @@ $(window).ready(function () {
             $(".parent").attr("class", "parent light");
             document.body.style.backgroundColor="#fdf9ff";
             localStorage.setItem("mode","light");
+        }
+        if ($(".parent .parnet-sections .section-one").hasClass("active")){
+        $(".parent .parnet-sections .section-one .containerFirst .boxFirst .container .row").addClass("animer");
+        setTimeout(function(){
+            $(".parent .parnet-sections .section-one .containerFirst .boxFirst .container .row").removeClass("animer");
+            chk.disabled=false;
+        }, 3000);
+        }else{
+            chk.disabled=false;
         }
     });
 
