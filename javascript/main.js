@@ -5,7 +5,15 @@ $(window).ready(function () {
     let closeBtn = document.querySelector(".parnet-sections .topnav #btn");
     let listItems = document.querySelectorAll('.soical-icons li');
     const targetElemet = $(".parent .sidebar ul");
+    var splashoverlay = document.getElementById('splash-overlay');
+    var welcome = document.getElementById('welcome');
     $(function () {
+        setTimeout(function(){
+            splashoverlay.style.display = 'none';
+            splashoverlay.style.opacity = 0;
+            welcome.style.display = 'none';
+            welcome.style.opacity = 0;
+        }, 4000);
         var nodes  = [].slice.call(document.querySelectorAll('.parent .section-four .content .grid li'), 0);
         function getDirection(ev, obj) {
             var w, h, x, y, d;
@@ -51,8 +59,10 @@ $(window).ready(function () {
         let mode=localStorage.getItem("mode");
         $(".parent").attr("class", "parent "+mode);
         if (mode == "light") {
+            document.body.style.backgroundColor="#fdf9ff";
             chk.checked = true;
         }else if(mode == "dark"){
+            document.body.style.backgroundColor="#151515";
             chk.checked = false;
         }
     })
@@ -157,9 +167,11 @@ $(window).ready(function () {
         let parentstr = $(".parent").attr("class");
         if (parentstr == "parent light") {
             $(".parent").attr("class", "parent dark");
+            document.body.style.backgroundColor="#151515";
             localStorage.setItem("mode","dark");
         } else {
             $(".parent").attr("class", "parent light");
+            document.body.style.backgroundColor="#fdf9ff";
             localStorage.setItem("mode","light");
         }
     });
