@@ -107,7 +107,7 @@ $(window).ready(function () {
         if (c == null) {
             c = null
         }
-        return $.getJSON("language.json", function (g) {
+        return $.getJSON("json/language.json", function (g) {
             var f, d, h, e;
             if (c !== null) {
                 localStorage.MultiLanguage = c

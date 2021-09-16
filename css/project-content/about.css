@@ -1,7 +1,37 @@
 /*start head row*/
 .parent .parnet-sections .section-two .head h4 {
     font-size: 25px;
+    margin-bottom: 15px;
+}
+.parent .parnet-sections .section-two .head .boxAbout {
+    border-radius: 20px;
+    background: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 10px #cccccc,
+    10px 10px 10px #ffffff,
+    0 0 0 #cccccc inset,
+    0 0 0 #ffffff inset;
+}
+.parent .parnet-sections .section-two .head .boxAbout .buttons {
+    margin-top: 30px;
+}
+
+.parent .parnet-sections .section-two .head .boxAbout .buttons button {
+    background-color: var(--blueColor);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    margin-right: 20px;
+    border-radius: 25px;
+    text-transform: capitalize;
     margin-bottom: 20px;
+}
+.parent .parnet-sections .section-two .head .boxAbout .buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .parent .parnet-sections .section-two .head h4 span {
@@ -9,9 +39,7 @@
 }
 
 .parent .parnet-sections .section-two .head p.text {
-    width: 85%;
     line-height: 1.8em;
-    margin-bottom: 50px;
 }
 
 .parent .parnet-sections .section-two .head .content {
@@ -19,7 +47,9 @@
     justify-content: space-between;
     width: 100%;
 }
-
+.parent .parnet-sections .section-two .head{
+    display: block;
+}
 .parent .parnet-sections .section-two .head .content .bord.one{
     width: 60%;
     display: flex;
@@ -39,21 +69,7 @@
     margin-left: 10px;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.one .buttons {
-    margin-top: 30px;
-}
 
-.parent .parnet-sections .section-two .head .content .bord.one .buttons button {
-    background-color: var(--blueColor);
-    color: white;
-    border: none;
-    outline: none;
-    padding: 10px 30px;
-    margin-right: 20px;
-    border-radius: 25px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
 
 .parent .parnet-sections .section-two .head .content .bord.two{
     width: 37%;

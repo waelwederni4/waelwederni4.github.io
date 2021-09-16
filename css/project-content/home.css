@@ -8,55 +8,10 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-color: var(--BCLight-light);
+    background-color: var(--whiteColor3);
 }
-
-.parent .parnet-sections .section {
-    width: 100%;
-    height:100vh;
-    position: absolute;
-    transition: 0.5s ease-in-out left;
-    left: 100%;
-    overflow:auto;
-    background-color: var(--BCLight-light);
-}
-
-.parent .parnet-sections .section.active {
-    left: 0%;
-}
-.parent .parnet-sections .selectpicker{
-    z-index: 99999;
-}
-
-/*start setting sections*/
-.parent .parnet-sections .setting {
-    position: fixed;
-    right: -250px;
-    top:55px;
-    background-color: white;
-    border:1px solid var(--borderLight-light);
-    width: 250px;
-    border-radius:0 0 0 5px;
-    z-index: 99999;
-}
-
-.parent .parnet-sections .setting .icon {
-    position: absolute;
-    left: -50px;
-    top:-1.5px;
-    border: 1px solid var(--borderLight-light);
-    width: 50px;
-    height: 52px;
-    text-align: center;
-    background-color: white;
-    border-radius: 5px 0 0 5px;
-}
-
-.parent .parnet-sections .setting .fa-cog {
-    line-height: 50px;
-    font-size: 25px;
-    animation: rotate 4s linear infinite;
-    cursor:pointer
+.parent .parnet-sections .section-one .head{
+    display: block;
 }
 
 @keyframes rotate {
@@ -65,57 +20,6 @@
     }
 }
 
-.parent .parnet-sections .setting h4,
-.parent .parnet-sections .setting ul.colors,
-.parent .parnet-sections .setting .language,
-.parent .parnet-sections .setting .switcher {
-    padding: 9px 15px;
-    margin: 0;
-}
-
-.parent .parnet-sections .setting h4,
-.parent .parnet-sections .setting ul.colors {
-    border-bottom:1px solid var(--borderLight-light)
-}
-
-.parent .parnet-sections .setting ul.colors {
-    margin: 0;
-}
-
-.parent .parnet-sections .setting ul.colors li {
-    list-style: none;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.parent .parnet-sections .setting ul.colors li[class="redColor"] {
-    background-color: var(--redColor);
-}
-
-.parent .parnet-sections .setting ul.colors li[class="blueColor"] {
-    background-color: var(--blueColor);
-}
-
-.parent .parnet-sections .setting ul.colors li[class="OrangeColor"] {
-    background-color: var(--OrangeColor);
-}
-
-.parent .parnet-sections .setting ul.colors li[class="YellowColor"] {
-    background-color: var(--YellowColor);
-}
-.parent .parnet-sections .setting ul.colors li[class="greenColor"] {
-    background-color: var(--greenColor);
-}
-
-.parent .parnet-sections .setting .input label{
-    margin:0 15px 0 5px;
-}
-
-/*end setting sections*/
-/*end parent sections*/
 /*start sections one*/
 .parent .parnet-sections .section .container,
 .parent .parnet-sections .section .container .row{
@@ -235,7 +139,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--BCLight-light);
+    background: var(--whiteColor3);
     border-left: 2px solid var(--blueColor);
     animation: typing 3s steps(10) infinite;
 }
@@ -355,7 +259,7 @@
 }
 
 /*end sections one*/
-.containerFirst {
+.parent .parnet-sections .section-one .containerFirst {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -363,7 +267,7 @@
     width: 100%;
     height: 100%;
 }
-.containerFirst .bg {
+.parent .parnet-sections .section-one .containerFirst .bg {
     position: fixed;
     top: -50%;
     left: -50%;
@@ -377,7 +281,7 @@
     opacity: .9;
     visibility: visible;
 }
-.boxFirst {
+.parent .parnet-sections .section-one .boxFirst {
     border-radius: 20px;
     width: 580px;
     height: 580px;

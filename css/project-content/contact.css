@@ -27,6 +27,9 @@
 }
 
 .parent .section-five .content .foot {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -42,7 +45,9 @@
 .parent .section-five .content .foot input.half {
     width: 49%;
 }
-
+.parent .section-five .content .foot input.half:nth-of-type(1) {
+    float: left;
+}
 .parent .section-five .content .foot input.half:nth-of-type(2) {
     float: right;
 }
@@ -57,13 +62,19 @@
 .parent .section-five .content .foot button {
     background-color: var(--blueColor);
     color: white;
-    padding:12px 20px;
     border-radius: 25px;
     outline: none;
     border:none;
     font-weight: bolder;
     margin-top: 20px;
     font-size: 18px;
+    text-align: center;
     text-transform: capitalize;
     margin-bottom: 20px;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+.parent .section-five .content .foot button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
