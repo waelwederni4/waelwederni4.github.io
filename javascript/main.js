@@ -141,7 +141,15 @@ $(window).ready(function () {
         localStorage.setItem("lang",lang);
         MultiLanguage(lang);
     })
-
+    $(".parent .section-four .content .grid .bord .info .button__holder").on("click", function () {
+        let ele = $(this).parent().parent().children('a').children('img').attr("src");
+        const name=ele.replace("imgs/projects/","").replace("0.jpg","").replaceAll("/","");
+        $.getJSON("json/urls.json", function (data) {
+            if(data[name]!=""){
+                window.location.replace(data[name]);
+            }
+        });
+    })
 //when click on nav-bar items
     $(".parent .sidebar  ul li").on("click", function () {
         document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
