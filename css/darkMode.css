@@ -33,6 +33,9 @@
     animation: animeDark 3.5s cubic-bezier(0.16, 1, 0.3, 1);
     /* animation-fill-mode: forwards; */
 }
+.parent.dark .parnet-sections .section-two .head .content .bord.two .skill-bar{
+    background: var(--borderDark-light);
+}
 .parent.dark .parnet-sections .section-two .head .boxAbout{
     background: var(--Dark2Color);
     box-shadow: 10px 10px 10px #3d3d3d,
@@ -50,6 +53,8 @@
     background-color: var(--Dark2Color);
 }
 .parent.dark .section-three .row .content .bord:hover i,
+.parent.dark .parnet-sections .section-two .head .content .bord.two .skill-per::before,
+.parent.dark .parnet-sections .section-two .head .content .bord.two .skill-per::after,
 .parent.dark .sidebar li a{
     background-color: var(--Dark3Color);
 }
@@ -59,6 +64,7 @@
 .parent.dark .parnet-sections .section .row .txt .atf-sec_icon:before,
 .parent.dark .parnet-sections .section .row .txt .atf-sec_icon:after,
 .parent.dark .parnet-sections .section .row .txt .atf-sec_icon span,
+.parent.dark .parnet-sections .section-two .head .content .bord.two .skill-per,
 .parent.dark .parnet-sections .section .row .txt .atf-sec_icon .atf-sec_radius
 {
     background-color: var(--Dark3Color);
@@ -105,6 +111,8 @@
 .parent.dark .parnet-sections .section-two .foot .bord .content .txt span i,
 .parent.dark .section-four .content .filter-list ul li,
 .parent.dark .nav-bar h1,
+.parent.dark .parnet-sections .section-two .head .content .bord.two .skill-name,
+.parent.dark .parnet-sections .section-two .head .content .bord.two .skill-per::before,
 .parent.dark .parnet-sections .section-one ul.soical-icons li,
 .parent.dark .section-five .content .foot button,
 .parent.dark .section-three .row .content .bord:hover i,

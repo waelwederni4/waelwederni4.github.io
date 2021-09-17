@@ -4,10 +4,33 @@ $(window).ready(function () {
     let sidebar = document.querySelector(".sidebar");
     let closeBtn = document.querySelector(".parnet-sections .topnav #btn");
     let listItems = document.querySelectorAll('.soical-icons li');
+    const fader = document.querySelectorAll('.fadeUp');
+    const appearOption = {
+        root:null,
+        threshold:0,
+        rootMargin:"-150px"
+    };
+    const appearOnscroll = new IntersectionObserver(
+        function (
+            entries,
+            appearOnscroll
+        ){
+            entries.forEach(function (entry, i){
+                if (!entry.isIntersecting){
+                    return;
+                }else {
+                    entry.target.classList.add("appear");
+                    appearOnscroll.unobserve(entry.target);
+                }
+            });
+        },appearOption);
     const targetElemet = $(".parent .sidebar ul");
     var splashoverlay = document.getElementById('splash-overlay');
     var welcome = document.getElementById('welcome');
     $(function () {
+        fader.forEach(fad=>{
+            appearOnscroll.observe(fad);
+        })
         setTimeout(function (){$(".parent .parnet-sections .section-one .containerFirst .boxFirst .container .row").removeClass("animer");},3000);
         setTimeout(function(){
             splashoverlay.style.display = 'none';
@@ -66,15 +89,16 @@ $(window).ready(function () {
             document.body.style.backgroundColor="#151515";
             chk.checked = false;
         }
+
     })
     listItems.forEach((item, index) => {
         item.addEventListener('click', (event) => {
             const str = event.currentTarget.innerHTML;
-            if (str.includes("facebook")) window.location.replace("https://www.facebook.com/wael.wederni");
-            else if (str.includes("twitter")) window.location.replace("https://twitter.com/Wael21871333");
-            else if (str.includes("instagram")) window.location.replace("https://www.instagram.com/wael_wederni/?hl=fr");
-            else if (str.includes("linkedin-in")) window.location.replace("https://www.linkedin.com/in/wael-wederni-235b6018a/");
-            else if (str.includes("github")) window.location.replace("https://github.com/waelwederni4");
+            if (str.includes("facebook")) getUrl("facebook");
+            else if (str.includes("twitter")) getUrl("twitter");
+            else if (str.includes("instagram")) getUrl("instagram");
+            else if (str.includes("linkedin-in")) getUrl("linkedin-in");
+            else if (str.includes("github")) getUrl("github");
         });
     });
     function menuBtnChange() {
@@ -100,6 +124,13 @@ $(window).ready(function () {
         if(localStorage.getItem('lang')) {
             MultiLanguage(localStorage.getItem('lang'));
         }
+    }
+    function getUrl(name){
+        $.getJSON("json/urls.json", function (data) {
+            if(data[name]!=""){
+                window.location.replace(data[name]);
+            }
+        });
     }
     $(window).onload=loadPage;
     function MultiLanguage(c) {
@@ -144,11 +175,7 @@ $(window).ready(function () {
     $(".parent .section-four .content .grid .bord .info .button__holder").on("click", function () {
         let ele = $(this).parent().parent().children('a').children('img').attr("src");
         const name=ele.replace("imgs/projects/","").replace("0.jpg","").replaceAll("/","");
-        $.getJSON("json/urls.json", function (data) {
-            if(data[name]!=""){
-                window.location.replace(data[name]);
-            }
-        });
+        getUrl(name);
     })
 //when click on nav-bar items
     $(".parent .sidebar  ul li").on("click", function () {
@@ -167,10 +194,12 @@ $(window).ready(function () {
         if (parentstr == "parent light") {
             $(".parent").attr("class", "parent dark");
             document.body.style.backgroundColor="#151515";
+            $(".HeadLogo").attr("href","imgs/logoDark.png");
             localStorage.setItem("mode","dark");
         } else {
             $(".parent").attr("class", "parent light");
             document.body.style.backgroundColor="#fdf9ff";
+            $(".HeadLogo").attr("href","imgs/logo.png");
             localStorage.setItem("mode","light");
         }
         if ($(".parent .parnet-sections .section-one").hasClass("active")){
@@ -197,6 +226,22 @@ $(window).ready(function () {
 //switch between sections
     $(".parent .sidebar  ul li").on("click", function () {
         let name="heading-nav"+($(this).index()+1);
+        if(name=="heading-nav2"){
+            $('.parent .parnet-sections .section-two .head .content .bord.two .skills .skill .skill-bar .skill-per').each(function(){
+                var $this = $(this);
+                var per = $this.attr('per');
+                $this.css("width",per+'%');
+                $({animatedValue: 0}).animate({animatedValue: per},{
+                    duration: 1000,
+                    step: function(){
+                        $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    },
+                    complete: function(){
+                        $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    }
+                });
+            });
+        }
         let ele = $("." +name );
         ele.css("z-index", "9").animate({
             "left": "0%"

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" class="HeadLogo" href="imgs/logo.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="icons/css/all.min.css">
     <link rel="stylesheet" href="css/project-content/home.css">
@@ -136,7 +137,7 @@
                             <span class="atf-sec_radius"></span>
                             <span></span></div>
                     </div>
-                        <div class="boxAbout">
+                        <div class="bord boxAbout fadeUp">
                             <h4 id="about-me1" class="heading">i'm <span class="color-style">Wael Wederni</span></h4>
                             <p id="about-me2" class="text">
                                 I am a Software Engineer, and I'm very passionate and dedicated
@@ -151,13 +152,13 @@
                         </div>
                     <div class="content">
                         <div class="bord one">
-                            <div class="data">
+                            <div class="data fadeUp">
                                 <p id="content0" class="heading">birthdat :<span class="text">20/11/1997</span></p>
                                 <p id="content1" class="heading">age :<span class="text">24</span></p>
                                 <p id="content2" class="heading">websits :<span class="text">waelwederni.me</span></p>
                                 <p id="content3" class="heading">email :<span class="text">waelwederni4@gmail.com</span></p>
                             </div>
-                            <div class="data">
+                            <div class="data fadeUp">
                                 <p id="content4" class="heading">degree :<span class="text">Bac +6</span></p>
                                 <p id="content5" class="heading">Phone :<span class="text">+216 29 899 262 / +216 25 488 161</span></p>
                                 <p id="content6" class="heading">city :<span class="text">Tataouine</span></p>
@@ -165,38 +166,64 @@
                             </div>
 
                         </div>
-                        <div class="bord two">
-                            <div class="progress">
-                                <div class="perc">
-                                    <p class="heading">Java<span class="text">80%</span></p>
+                        <div class="bord two fadeUp">
+                            <div class="skills">
+                                <div class="skill">
+                                    <div class="skill-name">HTML</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="90"></div>
+                                    </div>
                                 </div>
-                                <div class=" progress-bar" role="progressbar" style="width:80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="perc">
-                                    <p class="heading">HTML5 & CSS3<span class="text">90%</span></p>
+                                <div class="skill">
+                                    <div class="skill-name">CSS</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="70"></div>
+                                    </div>
                                 </div>
-                                <div class=" progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="perc">
-                                    <p class="heading">bootstrap 4<span class="text">70%</span></p>
+                                <div class="skill">
+                                    <div class="skill-name">Javascript</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="60"></div>
+                                    </div>
                                 </div>
-                                <div class=" progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="progress">
-                                <div class="perc">
-                                    <p class="heading">AJAX-JSON & web API<span class="text">65%</span></p>
+                                <div class="skill">
+                                    <div class="skill-name">Java</div>
+                                    <div class="skill-bar">
+                                        <div class="skill-per" per="80"></div>
+                                    </div>
                                 </div>
-                                <div class=" progress-bar" role="progressbar" style="width: 65%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row foot">
-                    <div class="bord">
+                    <div class="bord fadeUp fromLeft">
                         <h1 class="heading">eduction</h1>
-                        <div class="content">
+                        <div id="timeline-content">
+                        <ul class="timeline">
+                            <li class="event" data-date="2016-2015">
+                                <h3>Dinosaurs Roamed the Earth</h3>
+                                <p>RAWWWWWWRRR 🐢🦂</p>
+                            </li>
+                            <li class="event" data-date="2005">
+                                <h3>Creative Component Launched</h3>
+                                <p>"We can be all things to all people!" 📣</p>
+                            </li>
+                            <li class="event" id="date" data-date="2009">
+                                <h3>Squareflair was Born</h3>
+                                <p></p> <p>"We can be all things to Squarespace users!" 📣</p>
+                            </li>
+
+                            <li class="event" data-date="2021">
+
+                                <h3>Squareflair Today</h3>
+
+                                <p>"We design and build from scratch!" 📣<p/> <p>When we say <em><strong>100% custom</strong></em> we mean it— and we build all sites on the Squarespace Developer platform.<p/>
+                                <p>Did you know that all of our pixels are hand-forged from the rarest of subpixels grown and harvested in the <em>Nerd Forest</em>? <br>🤜💥🤛</p>
+                                <p><strong>Our success can be measured by lives and brands enhanced by 9+ years of 100% Squarespace-focused service!</strong></p>
+                            </li>
+                        </ul></div>
+                        <!--<div class="content">
                             <hr >
                             <div class="txt">
                                 <div class=" red-disc"></div>
@@ -225,9 +252,9 @@
                                     nisi semper, et elementum lorem ornare.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui
                                 </p>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
-                    <div class="bord">
+                    <div class="bord fadeUp fromRight">
                         <h1 class="heading">experience</h1>
                         <div class="content">
                             <hr >
@@ -276,32 +303,32 @@
                             <span></span></div>
                     </div>
                     <div class="content grid">
-                        <div class="bord">
+                        <div class="bord fadeUp ">
                             <i class="icon fas fa-code"></i>
                             <h4 class="heading">Web Development</h4>
                             <p class="text">The role is responsible for designing, coding and modifying websites, from layout to function and according to a client’s specifications. Strive to create visually appealing sites that feature user-friendly design and clear navigation.</p>
                         </div>
-                        <div class="bord">
+                        <div class="bord fadeUp">
                             <i class="icon fas fa-code"></i>
                             <h4 class="heading">Desktop development</h4>
                             <p class="text">Desktop applications are programs, such as Microsoft Word or Access, which operate on a computer as opposed to over the Internet.</p>
                         </div>
-                        <div class="bord">
+                        <div class="bord fadeUp">
                             <i class="icon far fa-eye"></i>
                             <h4 class="heading">Web Design</h4>
                             <p class="text">The life of a designer is a life of fight. Fight against the ugliness. Just like a doctor fights against disease. For us, the visual disease is what we have around, and what we try to do is cure it somehow with design.</p>
                         </div>
-                        <div class="bord">
+                        <div class="bord fadeUp">
                             <i class="icon fas fa-code"></i>
                             <h4 class="heading">Web Research</h4>
                             <p class="text">Internet research is the practice of using Internet information, especially free information on the World Wide Web, or Internet-based resources (like Internet discussion forum) in research.</p>
                         </div>
-                        <div class="bord">
+                        <div class="bord fadeUp">
                             <i class="icon fas fa-project-diagram"></i>
                             <h4 class="heading">networking</h4>
                             <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
                         </div>
-                        <div class="bord">
+                        <div class="bord fadeUp">
                             <i class="icon fab fa-connectdevelop"></i>
                             <h4 class="heading">modern technology</h4>
                             <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
@@ -521,21 +548,21 @@
                     </div>
                     <div class="content">
                         <div class="head">
-                            <div class="bord">
+                            <div class="bord fadeUp">
                                 <i class="color-style fas fa-phone"></i>
                                 <h4 class="heading">call me on</h4>
                                 <span class="text">+216 25488161 / +216 29899262</span>
                             </div>
-                            <div class="bord">
+                            <div class="bord fadeUp">
                                 <i class="color-style fa fa-envelope"></i>
                                 <h4 class="heading">email</h4>
                                 <span class="text">waelwederni4@gmail.com</span>
                             </div>
                         </div>
                         <div class="foot">
-                            <input type="text" class="half" placeholder="your name">
-                            <input type="text" class="half" placeholder="subject">
-                            <textarea placeholder="your message"></textarea>
+                            <input type="text" class="half fadeUp" placeholder="your name">
+                            <input type="text" class="half fadeUp" placeholder="subject">
+                            <textarea class="fadeUp" placeholder="your message"></textarea>
                             <button >send message</button>
                         </div>
                     </div>

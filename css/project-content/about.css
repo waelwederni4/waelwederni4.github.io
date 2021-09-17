@@ -74,35 +74,65 @@
 .parent .parnet-sections .section-two .head .content .bord.two{
     width: 37%;
 }
-
-.parent .parnet-sections .section-two .head .content .bord.two .progress {
+.parent .parnet-sections .section-two .head .content .bord.two .skills{
     width: 100%;
-    overflow: visible;
-    flex-direction: column;
-    height: auto;
-    line-height: 1.5em;
-    background-color: transparent;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress .progress-bar {
-    height: 7px;
+.parent .parnet-sections .section-two .head .content .bord.two .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.parent .parnet-sections .section-two .head .content .bord.two .skill-bar{
+    height: 10px;
+    background: #cacaca;
+    border-radius: 6px;
+}
+
+.parent .parnet-sections .section-two .head .content .bord.two .skill-per{
+    height: 10px;
     background-color: var(--blueColor);
-    border-radius: 5px 0 0 5px;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent);
+    border-radius: 6px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
 }
 
-.parent .parnet-sections .section-two .head .content .bord.two .progress:not(:last-child) {
-    margin-bottom: 25px;
+.parent .parnet-sections .section-two .head .content .bord.two .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: var(--blueColor);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
 }
 
-
-.parent .parnet-sections .section-two .head .content .bord.two .progress p {
-    margin-bottom: 15px;
-    font-size: 20px;
-    text-transform: capitalize;
-}
-
-.parent .parnet-sections .section-two .head .content .bord.two .progress p span {
-    float: right;
+.parent .parnet-sections .section-two .head .content .bord.two .skill-per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--blueColor);
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
 }
 /*start head row*/
 /*start foot row*/
@@ -164,6 +194,72 @@
 .parent .parnet-sections .section-two .foot .bord .content .txt p {
     margin-bottom: 0;
 }
-
-
 /*end foot row*/
+#timeline-content {
+    text-align: center;
+    max-width: 100%;
+}
+/* Timeline */
+.timeline {
+    border-left: 4px solid #4298C3;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    float: right;
+    max-width: 90%;
+}
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+.timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.timeline .event:before {
+    left: -217.5px;
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+.timeline .event:after {
+    box-shadow: 0 0 0 4px #4298c3;
+    left: -57.85px;
+    background: #313534;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
