@@ -111,6 +111,7 @@
 .parent.dark .parnet-sections .section-two .foot .bord .content .txt span i,
 .parent.dark .section-four .content .filter-list ul li,
 .parent.dark .nav-bar h1,
+.parent.dark .parnet-sections .section-two .foot .bord h2,
 .parent.dark .parnet-sections .section-two .head .content .bord.two .skill-name,
 .parent.dark .parnet-sections .section-two .head .content .bord.two .skill-per::before,
 .parent.dark .parnet-sections .section-one ul.soical-icons li,
@@ -160,6 +161,23 @@
 .parent.dark #welcome  .icon{
     content: url("../imgs/logoDark.png");
 }
+.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline {
+    border-left: 4px solid var(--Dark3Color);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+}
+.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:before {
+    color: rgba(255, 255, 255, 0.4);
+}
+.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:after {
+    box-shadow: 0 0 0 4px var(--Dark3Color);
+    background: var(--text-dark);
+}
+/************************** Animation *************************/
 @keyframes moveUpDark {
     0% {
         background: var(--Dark1Color);

@@ -80,15 +80,6 @@ $(window).ready(function () {
                 addClass(ev, this, 'out');
             }, false);
         });
-        let mode=localStorage.getItem("mode");
-        $(".parent").attr("class", "parent "+mode);
-        if (mode == "light") {
-            document.body.style.backgroundColor="#fdf9ff";
-            chk.checked = true;
-        }else if(mode == "dark"){
-            document.body.style.backgroundColor="#151515";
-            chk.checked = false;
-        }
 
     })
     listItems.forEach((item, index) => {
@@ -117,12 +108,20 @@ $(window).ready(function () {
         })
     }
     function loadPage() {
-        if(localStorage.getItem('mode')) {
-            let mode=localStorage.getItem("mode");
-            $(".parent").attr("class", "parent "+mode);
+        const mode=localStorage.getItem("mode");
+        const lang=localStorage.getItem('lang');
+        $(".parent").attr("class", "parent "+mode);
+        if (mode == "light") {
+            document.body.style.backgroundColor="#fdf9ff";
+            $(".HeadLogo").attr("href","imgs/logo.png");
+            chk.checked = true;
+        }else if(mode == "dark"){
+            document.body.style.backgroundColor="#151515";
+            $(".HeadLogo").attr("href","imgs/logoDark.png");
+            chk.checked = false;
         }
-        if(localStorage.getItem('lang')) {
-            MultiLanguage(localStorage.getItem('lang'));
+        if (lang!="" || lang!=undefined){
+            MultiLanguage(lang);
         }
     }
     function getUrl(name){
@@ -132,7 +131,7 @@ $(window).ready(function () {
             }
         });
     }
-    $(window).onload=loadPage;
+    $(window).on("load",loadPage);
     function MultiLanguage(c) {
         var b = this;
         if (c == null) {

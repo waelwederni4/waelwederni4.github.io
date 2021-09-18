@@ -143,71 +143,28 @@
 } 
 
 .parent .parnet-sections .section-two .foot .bord {
-    width: 49%;
+    width: 50%;
     margin-bottom:40px;
 }
 
-.parent .parnet-sections .section-two .foot .bord h1 {
+.parent .parnet-sections .section-two .foot .bord h2 {
     padding: 20px 0;
+    text-align: center;
 }
 
-.parent .parnet-sections .section-two .foot .bord .content {
-    box-shadow: 0 0 15px 0px var(--boxShadow);
-    padding: 25px 40px;
-    position: relative;
-    border-radius: 5px;
-}
-
-.parent .parnet-sections .section-two .foot .bord .content hr {
-    position: absolute;
-    left: 20px;
-    top:50%;
-    height: 90%;
-    width: 1px;
-    transform: rotate(0deg) translateY(-50%);
-    background-color: var(--blueColor);
-    margin: 0;
-}
-
-.parent .parnet-sections .section-two .foot .bord .content .txt:not(:last-child) {
-    margin-bottom: 60px;
-}
-
-.parent .parnet-sections .section-two .foot .bord .content .txt {
-    position: relative;
-}
-
-.parent .parnet-sections .section-two .foot .bord .content .txt .red-disc {
-    position: absolute;
-    left: -24.2px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--blueColor);
-}
-
-.parent .parnet-sections .section-two .foot .bord .content .txt span i {
-    margin:0 10px 15px 0;
-    color: gray;
-}
-
-.parent .parnet-sections .section-two .foot .bord .content .txt p {
-    margin-bottom: 0;
-}
-/*end foot row*/
-#timeline-content {
+.parent .parnet-sections .section-two .foot .bord .timeline-content {
     text-align: center;
     max-width: 100%;
 }
 /* Timeline */
-.timeline {
-    border-left: 4px solid #4298C3;
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline {
+    border-left: 4px solid var(--blueColor);
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    background: rgba(255, 255, 255, 0.03);
-    color: rgba(255, 255, 255, 0.8);
+    background: var(--whiteColor2);
+    color: var(--Dark3Color);
+    box-shadow: 0 0 15px 0px var(--boxShadow);
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 50px auto;
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
@@ -219,47 +176,53 @@
     float: right;
     max-width: 90%;
 }
-.timeline h1,
-.timeline h2,
-.timeline h3 {
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline h1,
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline h2,
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline h3 {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1.5px;
     font-weight: 100;
     font-size: 1.4em;
 }
-.timeline .event {
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event {
+    border-bottom: 1px dashed rgba(48, 46, 77, 0.48);
     padding-bottom: 25px;
     margin-bottom: 50px;
     position: relative;
 }
-.timeline .event:last-of-type {
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
 }
-.timeline .event:before,
-.timeline .event:after {
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:before,
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:after {
     position: absolute;
     display: block;
     top: 0;
 }
-.timeline .event:before {
-    left: -217.5px;
-    color: rgba(255, 255, 255, 0.4);
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:before {
+    left: -183px;
+    color: var(--Dark3Color);
     content: attr(data-date);
     text-align: right;
     font-weight: 100;
     font-size: 0.9em;
     min-width: 120px;
 }
-.timeline .event:after {
-    box-shadow: 0 0 0 4px #4298c3;
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event.long:before {
+    left: -133px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+}
+.parent .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:after {
+    box-shadow: 0 0 0 4px var(--blueColor);
     left: -57.85px;
-    background: #313534;
+    background: var(--Dark3Color);
     border-radius: 50%;
     height: 11px;
     width: 11px;
     content: "";
     top: 5px;
 }
+/*end foot row*/
