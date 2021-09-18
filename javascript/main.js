@@ -28,6 +28,7 @@ $(window).ready(function () {
     var splashoverlay = document.getElementById('splash-overlay');
     var welcome = document.getElementById('welcome');
     $(function () {
+        console.log(chk.checked)
         fader.forEach(fad=>{
             appearOnscroll.observe(fad);
         })
@@ -189,18 +190,17 @@ $(window).ready(function () {
 
     chk.addEventListener('change', () => {
             chk.disabled=true;
-        let parentstr = $(".parent").attr("class");
-        if (parentstr == "parent light") {
-            $(".parent").attr("class", "parent dark");
-            document.body.style.backgroundColor="#151515";
-            $(".HeadLogo").attr("href","imgs/logoDark.png");
-            localStorage.setItem("mode","dark");
-        } else {
-            $(".parent").attr("class", "parent light");
-            document.body.style.backgroundColor="#fdf9ff";
-            $(".HeadLogo").attr("href","imgs/logo.png");
-            localStorage.setItem("mode","light");
-        }
+            if(chk.checked){
+                $(".parent").attr("class", "parent light");
+                document.body.style.backgroundColor="#fdf9ff";
+                $(".HeadLogo").attr("href","imgs/logo.png");
+                localStorage.setItem("mode","light");
+            }else{
+                $(".parent").attr("class", "parent dark");
+                document.body.style.backgroundColor="#151515";
+                $(".HeadLogo").attr("href","imgs/logoDark.png");
+                localStorage.setItem("mode","dark");
+            }
         if ($(".parent .parnet-sections .section-one").hasClass("active")){
         $(".parent .parnet-sections .section-one .containerFirst .boxFirst .container .row").addClass("animer");
         setTimeout(function(){

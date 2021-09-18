@@ -356,21 +356,21 @@ body.en {
 
 .parent .parnet-sections .topnav .switcher .label {
     background-color: #111;
-    border-radius: 30px;
+    border-radius: 29px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 4px;
     position: relative;
     height: 20px;
-    width: 50px;
+    width: 46px;
     transform: scale(1.5);
 }
 
 .parent .parnet-sections .topnav .switcher .label .ball {
     background-color: #fff;
-    border-radius: 40%;
+    border-radius: 50%;
     position: absolute;
     left: 1px;
     height: 20px;
@@ -380,18 +380,22 @@ body.en {
 }
 
 .parent .parnet-sections .topnav .switcher .checkbox:checked + .label .ball {
-    transform: translateX(25px);
+    transform: translateX(26px);
 }
 
 
 .parent .parnet-sections .topnav .switcher .label .fa-moon {
     color: #f1c40f;
-    height: 18px;
+    float: left;
+    height: 15px;
+    font-size: 0.9em;
 }
 
 .parent .parnet-sections .topnav .switcher .label .fa-sun {
     color: #f39c12;
-    height: 18px;
+    float: right;
+    height: 15px;
+    font-size: 0.9em;
 }
 /*end app bar*/
 .parent .parnet-sections .topnav .language {
