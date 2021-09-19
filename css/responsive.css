@@ -17,6 +17,9 @@
     .parent .parnet-sections .section-one .boxFirst{
         margin: 25px;
     }
+    .parent .section-four .content .grid .info {
+        padding: 5px;
+    }
     .parent  .topnav .btn {
         display: block;
         z-index: 9999999999999999999999;

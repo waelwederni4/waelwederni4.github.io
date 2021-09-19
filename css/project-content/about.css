@@ -74,6 +74,29 @@
 .parent .parnet-sections .section-two .head .content .bord.two{
     width: 37%;
 }
+.parent .parnet-sections .section-two .head .content .bord.three{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.parent .parnet-sections .section-two .head .content .bord.three .data .row {
+    display: grid;
+    top:0;
+    grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.parent .parnet-sections .section-two .head .content .bord.three .data .row .column {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.parent .parnet-sections .section-two .head .content .bord.three .data .row .column img{
+    width: 100%;
+    height: 100%;
+}
 .parent .parnet-sections .section-two .head .content .bord.two .skills{
     width: 100%;
     max-width: 600px;

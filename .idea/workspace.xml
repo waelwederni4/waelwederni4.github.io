@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022cf25c-218b-43ff-886b-e5b9264c9ea6" name="Default Changelist" comment="edit">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/C#.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/Html.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/commandLine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/css.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/firebase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/git.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/java.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/javascript.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/nodeJs.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/darkMode.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/darkMode.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/project-content/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project-content/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/project-content/portofolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/portofolio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +43,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/imgs/projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/icons" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\icons" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\css" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs\projects\baladiti" />
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\javascript" />
-      <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\imgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\waelw\WebstormProjects\waelwederni4.github.io\json" />
@@ -100,7 +104,8 @@
       <workItem from="1631931539561" duration="9502000" />
       <workItem from="1631982233047" duration="595000" />
       <workItem from="1631991543237" duration="4759000" />
-      <workItem from="1632009901535" duration="9654000" />
+      <workItem from="1632009901535" duration="9699000" />
+      <workItem from="1632076344800" duration="4898000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1624658718736</created>
@@ -361,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631941100803</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="edit">
+      <created>1632019737763</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1632019737763</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
