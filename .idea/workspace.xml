@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="022cf25c-218b-43ff-886b-e5b9264c9ea6" name="Default Changelist" comment="edit">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/darkMode.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/darkMode.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project-content/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project-content/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project-content/portofolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/portofolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
     </list>
@@ -91,7 +97,10 @@
       <workItem from="1631713173834" duration="12267000" />
       <workItem from="1631750242967" duration="13614000" />
       <workItem from="1631803562352" duration="19731000" />
-      <workItem from="1631931539561" duration="9484000" />
+      <workItem from="1631931539561" duration="9502000" />
+      <workItem from="1631982233047" duration="595000" />
+      <workItem from="1631991543237" duration="4759000" />
+      <workItem from="1632009901535" duration="9654000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1624658718736</created>
@@ -345,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631939655683</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="edit">
+      <created>1631941100803</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1631941100803</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

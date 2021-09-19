@@ -23,7 +23,7 @@
 }
 .parent.dark .section-one .containerFirst .boxFirst {
     border-radius: 20px;
-    width: 580px;
+    width: 400px;
     height: 580px;
     background: var(--SlideDark);
     box-shadow: 10px 10px 10px #3d3d3d,
@@ -170,13 +170,11 @@
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
-.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:before {
-    color: rgba(255, 255, 255, 0.4);
+.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline .event .eventData::before{
+    background-color: var(--Dark3Color);
+    color: var(--text-dark);
 }
-.parent.dark .parnet-sections .section-two .foot .bord .timeline-content .timeline .event:after {
-    box-shadow: 0 0 0 4px var(--Dark3Color);
-    background: var(--text-dark);
-}
+
 /************************** Animation *************************/
 @keyframes moveUpDark {
     0% {
@@ -210,8 +208,8 @@
 }
 @keyframes animeDark {
     0% {
-        width: 60px;
-        height: 60px;
+        width: 0;
+        height: 0;
         background: var(--Dark1Color);
         box-shadow: 0 0 0 #3d3d3d,
         0 0 0 #222222,
@@ -237,7 +235,7 @@
         0 0 0 #222222 inset;
     }
     100% {
-        width: 580px;
+        width: 400px;
         height: 580px;
         background: var(--SlideDark);
         box-shadow: 10px 10px 10px #3d3d3d,

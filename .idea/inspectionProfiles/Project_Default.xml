@@ -6,9 +6,11 @@
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
-          <list size="2">
+          <list size="4">
             <item index="0" class="java.lang.String" itemvalue="animation" />
             <item index="1" class="java.lang.String" itemvalue="-prefix-animation" />
+            <item index="2" class="java.lang.String" itemvalue="border-left-radius" />
+            <item index="3" class="java.lang.String" itemvalue="border-right-radius" />
           </list>
         </value>
       </option>

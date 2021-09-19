@@ -2,6 +2,7 @@
 $(window).ready(function () {
     const chk = document.getElementById('chk');
     let sidebar = document.querySelector(".sidebar");
+    let navlist = document.querySelector(".nav-list");
     let closeBtn = document.querySelector(".parnet-sections .topnav #btn");
     let listItems = document.querySelectorAll('.soical-icons li');
     const fader = document.querySelectorAll('.fadeUp');
@@ -27,6 +28,7 @@ $(window).ready(function () {
     const targetElemet = $(".parent .sidebar ul");
     var splashoverlay = document.getElementById('splash-overlay');
     var welcome = document.getElementById('welcome');
+    var iconSidebar  = [].slice.call(document.querySelectorAll('.parent .sidebar  ul li'), 0);
     $(function () {
         console.log(chk.checked)
         fader.forEach(fad=>{
@@ -70,7 +72,6 @@ $(window).ready(function () {
             }
             obj.classList.add(state + class_suffix);
         }
-
         // bind events
         nodes.forEach(function (el) {
             el.addEventListener('mouseenter', function (ev) {
@@ -81,8 +82,35 @@ $(window).ready(function () {
                 addClass(ev, this, 'out');
             }, false);
         });
-
     })
+    function addBg(obj){
+        if($(".parent").hasClass("light"))obj.css("background", "#2196f3");
+        else obj.css("background", "#504e70");
+    }
+    function removeBg(obj){
+        if($(".parent").hasClass("light"))obj.css("background", "#fdf9ff");
+        else obj.css("background", "#302e4d");
+    }
+    navlist.addEventListener('mouseenter', function (ek) {
+        iconSidebar.forEach(elem => removeBg($(elem).children('a')));
+        iconSidebar.forEach(function (el) {
+            el.addEventListener('mouseenter', function (ev) {
+                addBg($(el).children('a'));
+            }, false);
+
+            el.addEventListener('mouseleave', function (ev) {
+                removeBg($(el).children('a'));
+            }, false);
+        });
+    }, false);
+
+    navlist.addEventListener('mouseleave', function (ev) {
+        iconSidebar.forEach(function (el) {
+            el.removeEventListener('mouseenter',null);
+            el.removeEventListener('mouseleave',null);
+        });
+        addBg($('.nav-list li a.active'));
+    }, false);
     listItems.forEach((item, index) => {
         item.addEventListener('click', (event) => {
             const str = event.currentTarget.innerHTML;
@@ -182,8 +210,6 @@ $(window).ready(function () {
         document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
         document.querySelectorAll('.parent .parnet-sections .section').forEach(elem => $(elem).removeClass("active"));
         let id=$(this).attr('id');
-        $(this).addClass("heading " + targetElemet.attr("class") + " active")
-            .siblings().removeClass("" + targetElemet.attr("class") + " active");
         $(this).children().addClass("active");
         $(".parent .parnet-sections ."+id).addClass("active");
     })
@@ -210,6 +236,13 @@ $(window).ready(function () {
         }else{
             chk.disabled=false;
         }
+        iconSidebar.forEach(function (el) {
+            console.log($(el).children('a'))
+            removeBg($(el).children('a'));
+            el.removeEventListener('mouseenter',null);
+            el.removeEventListener('mouseleave',null);
+        });
+        addBg($('.nav-list li a.active'));
     });
 
 //translate nav-bar section
@@ -320,5 +353,5 @@ $(window).ready(function () {
         menuBtnChange();
     })
     closeNavBar($(".parent .section"))
-    closeNavBar($(".parent .sidebar  ul li"))
+
 })

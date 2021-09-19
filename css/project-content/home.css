@@ -281,13 +281,14 @@
     opacity: .9;
     visibility: visible;
 }
-.parent .parnet-sections .section-one .boxFirst {
+.parent .parnet-sections .section-one .containerFirst .boxFirst {
     border-radius: 20px;
-    width: 580px;
+    width: 400px;
     height: 580px;
     z-index: 99 ;
     background: #f8f8f8;
-    display: flex;
+    top:50%;
+    left: 50%;
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px #cccccc,
@@ -302,8 +303,8 @@
 }
 @keyframes anime {
     0% {
-        width: 60px;
-        height: 60px;
+        width: 0;
+        height: 0;
         background: #f0f0f0;
         box-shadow: 0 0 0 #cccccc,
         0 0 0 #ffffff,
@@ -329,13 +330,46 @@
         0 0 0 #ffffff inset;
     }
     100% {
-        width: 580px;
+        width: 400px;
         height: 580px;
         background: #fafafa;
         box-shadow: 40px 40px 40px #cccccc,
         0 0 0 #ffffff,
         0 0 0 #cccccc inset,
         2px 2px 2px #ffffff inset;
+    }
+}
+@keyframes turn-on {
+    0% {
+        transform: scale(1, 0.8) translate3d(0, 0, 0);
+        -webkit-filter: brightness(30);
+        filter: brightness(30);
+        opacity: 1;
+    }
+    3.5% {
+        transform: scale(1, 0.8) translate3d(0, 100%, 0);
+    }
+    3.6% {
+        transform: scale(1, 0.8) translate3d(0, -100%, 0);
+        opacity: 1;
+    }
+    9% {
+        transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
+        -webkit-filter: brightness(30);
+        filter: brightness(30);
+        opacity: 0;
+    }
+    11% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+        -webkit-filter: contrast(0) brightness(0);
+        filter: contrast(0) brightness(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1, 1) translate3d(0, 0, 0);
+        -webkit-filter: contrast(1) brightness(1.2) saturate(1.3);
+        filter: contrast(1) brightness(1.2) saturate(1.3);
+        opacity: 1;
     }
 }
 /**********************************************************************/
