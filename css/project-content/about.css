@@ -87,8 +87,7 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
     grid-template-rows: repeat(1, auto);
-    gap: 4px;
-    grid-auto-flow: column;
+    gap: 10px;
 }
 .parent .parnet-sections .section-two .container .row.head .content .bord.two .data .raw .column {
     width: 80px;

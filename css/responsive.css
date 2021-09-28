@@ -36,7 +36,7 @@
         height: 100%;
     }
     .parent .sidebar.open {
-        left: 0px;
+        left: 0;
     }
     .parent .parnet-sections .section-two .head .content .bord.one{
         width: 100%;

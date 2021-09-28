@@ -204,14 +204,6 @@ $(window).ready(function () {
         const name=ele.replace("imgs/projects/","").replace("0.jpg","").replaceAll("/","");
         getUrl(name);
     })
-//when click on nav-bar items
-    $(".parent .sidebar  ul li").on("click", function () {
-        document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
-        document.querySelectorAll('.parent .parnet-sections .section').forEach(elem => $(elem).removeClass("active"));
-        let id=$(this).attr('id');
-        $(this).children().addClass("active");
-        $(".parent .parnet-sections ."+id).addClass("active");
-    })
 
     chk.addEventListener('change', () => {
             chk.disabled=true;
@@ -255,6 +247,11 @@ $(window).ready(function () {
 
 //switch between sections
     $(".parent .sidebar  ul li").on("click", function () {
+        document.querySelectorAll('.parent .sidebar ul li a').forEach(elem => $(elem).removeClass("active"));
+        document.querySelectorAll('.parent .parnet-sections .section').forEach(elem => $(elem).removeClass("active"));
+        let id=$(this).attr('id');
+        $(this).children().addClass("active");
+        $(".parent .parnet-sections ."+id).addClass("active");
         let name="heading-nav"+($(this).index()+1);
         let ele = $("." +name );
         ele.css("z-index", "9").animate({
@@ -335,5 +332,5 @@ $(window).ready(function () {
         menuBtnChange();
     })
     closeNavBar($(".parent .section"))
-
+    if($(window).width()<992)closeNavBar($(".parent .sidebar  ul li"))
 })
