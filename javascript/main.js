@@ -30,7 +30,6 @@ $(window).ready(function () {
     var welcome = document.getElementById('welcome');
     var iconSidebar  = [].slice.call(document.querySelectorAll('.parent .sidebar  ul li'), 0);
     $(function () {
-        console.log(chk.checked)
         fader.forEach(fad=>{
             appearOnscroll.observe(fad);
         })
@@ -85,11 +84,11 @@ $(window).ready(function () {
     })
     function addBg(obj){
         if($(".parent").hasClass("light"))obj.css("background", "#2196f3");
-        else obj.css("background", "#504e70");
+        else if($(".parent").hasClass("dark")) obj.css("background", "#504e70");
     }
     function removeBg(obj){
         if($(".parent").hasClass("light"))obj.css("background", "#fdf9ff");
-        else obj.css("background", "#302e4d");
+        else if($(".parent").hasClass("dark")) obj.css("background", "#302e4d");
     }
     navlist.addEventListener('mouseenter', function (ek) {
         iconSidebar.forEach(elem => removeBg($(elem).children('a')));
@@ -237,7 +236,6 @@ $(window).ready(function () {
             chk.disabled=false;
         }
         iconSidebar.forEach(function (el) {
-            console.log($(el).children('a'))
             removeBg($(el).children('a'));
             el.removeEventListener('mouseenter',null);
             el.removeEventListener('mouseleave',null);
@@ -258,22 +256,6 @@ $(window).ready(function () {
 //switch between sections
     $(".parent .sidebar  ul li").on("click", function () {
         let name="heading-nav"+($(this).index()+1);
-        if(name=="heading-nav2"){
-            $('.parent .parnet-sections .section-two .head .content .bord.two .skills .skill .skill-bar .skill-per').each(function(){
-                var $this = $(this);
-                var per = $this.attr('per');
-                $this.css("width",per+'%');
-                $({animatedValue: 0}).animate({animatedValue: per},{
-                    duration: 1000,
-                    step: function(){
-                        $this.attr('per', Math.floor(this.animatedValue) + '%');
-                    },
-                    complete: function(){
-                        $this.attr('per', Math.floor(this.animatedValue) + '%');
-                    }
-                });
-            });
-        }
         let ele = $("." +name );
         ele.css("z-index", "9").animate({
             "left": "0%"

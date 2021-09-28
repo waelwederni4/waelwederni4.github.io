@@ -107,6 +107,7 @@
 .parent.dark .parnet-sections .section i,
 .parent.dark .section-three .row .content .bord:hover i,
 .parent.dark .parnet-sections .section h4,
+.parent.dark .parnet-sections .section h3,
 .parent.dark .parnet-sections .section span,
 .parent.dark .parnet-sections .section-two .foot .bord .content .txt span i,
 .parent.dark .section-four .content .filter-list ul li,
@@ -139,7 +140,7 @@
 }
 .parent.dark .section-four .content .grid .bord .info .button__holder .plus,
 .parent.dark .section-five .content .head .bord i,
-.parent.dark .parnet-sections .section-two .head h4 span{
+.parent.dark .parnet-sections .section-two .head h3 span{
     color: var(--Dark4Color);
 }
 .parent.dark .section-three .row .content .bord i{

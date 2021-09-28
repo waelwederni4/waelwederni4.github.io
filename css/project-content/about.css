@@ -1,7 +1,6 @@
 /*start head row*/
 .parent .parnet-sections .section-two .head h4 {
     font-size: 25px;
-    margin-bottom: 15px;
 }
 .parent .parnet-sections .section-two .head .boxAbout {
     border-radius: 20px;
@@ -34,7 +33,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.parent .parnet-sections .section-two .head h4 span {
+.parent .parnet-sections .section-two .head h3 span {
     color: var(--blueColor);
 }
 
@@ -43,15 +42,13 @@
 }
 
 .parent .parnet-sections .section-two .head .content {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 .parent .parnet-sections .section-two .head{
     display: block;
 }
 .parent .parnet-sections .section-two .head .content .bord.one{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -69,93 +66,37 @@
     margin-left: 10px;
 }
 
-
-
 .parent .parnet-sections .section-two .head .content .bord.two{
-    width: 37%;
-}
-.parent .parnet-sections .section-two .head .content .bord.three{
     padding: 10px;
     text-align: center;
+    display: inline-block;
+    align-items: center;
     width: 100%;
 }
-.parent .parnet-sections .section-two .head .content .bord.three .data .row {
-    display: grid;
-    top:0;
-    grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
-    grid-template-rows: repeat(1, auto);
-    justify-content: center;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+.parent .parnet-sections .section-two .head .content .bord.two .data{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.parent .parnet-sections .section-two .head .content .bord.three .data .row .column {
+.parent .parnet-sections .section-two .container .row.head .content .bord.two .data .raw {
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    gap: 4px;
+    grid-auto-flow: column;
+}
+.parent .parnet-sections .section-two .container .row.head .content .bord.two .data .raw .column {
     width: 80px;
     height: 80px;
-    margin: 10px;
 }
-.parent .parnet-sections .section-two .head .content .bord.three .data .row .column img{
+.parent .parnet-sections .section-two .container .row.head .content .bord.two .data .raw .column img{
     width: 100%;
     height: 100%;
-}
-.parent .parnet-sections .section-two .head .content .bord.two .skills{
-    width: 100%;
-    max-width: 600px;
-    padding: 0 20px;
-}
-
-.parent .parnet-sections .section-two .head .content .bord.two .skill-name{
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 10px 0;
-}
-
-.parent .parnet-sections .section-two .head .content .bord.two .skill-bar{
-    height: 10px;
-    background: #cacaca;
-    border-radius: 6px;
-}
-
-.parent .parnet-sections .section-two .head .content .bord.two .skill-per{
-    height: 10px;
-    background-color: var(--blueColor);
-    background-image: -webkit-linear-gradient(45deg,
-    rgba(255, 255, 255, .2) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, .2) 50%,
-    rgba(255, 255, 255, .2) 75%,
-    transparent 75%,
-    transparent);
-    border-radius: 6px;
-    width: 0;
-    transition: 1s linear;
-    position: relative;
-}
-
-.parent .parnet-sections .section-two .head .content .bord.two .skill-per::before{
-    content: attr(per);
-    position: absolute;
-    padding: 4px 6px;
-    background-color: var(--blueColor);
-    color: #fff;
-    font-size: 12px;
-    border-radius: 4px;
-    top: -35px;
-    right: 0;
-    transform: translateX(50%);
-}
-
-.parent .parnet-sections .section-two .head .content .bord.two .skill-per::after{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: var(--blueColor);
-    top: -16px;
-    right: 0;
-    transform: translateX(50%) rotate(45deg);
-    border-radius: 2px;
 }
 /*start head row*/
 /*start foot row*/
