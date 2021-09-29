@@ -124,6 +124,7 @@
     color: var(--text-dark);
 }
 .parent.dark .sidebar li .tooltip,
+.parent.dark .section-four .content .grid .bord .info .tech img,
 .parent.dark .section-four .content .grid .bord .info .button__holder .plus,
 .parent.dark .section-four .content .grid .bord .info .box .btn-white::after,
 .parent.dark .section-four .content .grid .bord .info .box .btn-white{

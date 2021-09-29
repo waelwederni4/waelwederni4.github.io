@@ -67,7 +67,7 @@
 }
 
 .parent .parnet-sections .section-two .head .content .bord.two{
-    padding: 10px;
+
     text-align: center;
     display: inline-block;
     align-items: center;
@@ -79,12 +79,14 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    justify-content: center;
 }
 .parent .parnet-sections .section-two .container .row.head .content .bord.two .data .raw {
     margin-top: 20px;
     display: grid;
     width: 100%;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(81px, 1fr));
     grid-template-rows: repeat(1, auto);
     gap: 10px;

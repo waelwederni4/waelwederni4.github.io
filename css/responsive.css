@@ -1,7 +1,7 @@
 @media (max-width:1200px) {
     .parent .sidebar {
         position: fixed;
-        left: 0px;
+        left: 0;
         z-index: 999999;
         transition: 0.5s ease-in-out left;
     }
@@ -25,7 +25,6 @@
         z-index: 9999999999999999999999;
     }
 }
-
 @media (max-width:992px) {
     .parent .parnet-sections .section-two .head .content {
         flex-direction: column;
