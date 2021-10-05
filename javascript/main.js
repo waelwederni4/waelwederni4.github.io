@@ -168,24 +168,20 @@ $(window).ready(function () {
         return $.getJSON("json/language.json", function (g) {
             var f, d, h, e;
             if (c !== null) {
-                localStorage.MultiLanguage = c
+                localStorage.setItem("lang",c);
             } else {
-                if (typeof localStorage.MultiLanguage === "undefined") {
-                    c = localStorage.MultiLanguage = g.config["default"]
+                if (typeof localStorage.getItem("lang") === "undefined") {
+                    localStorage.setItem("lang",g.config["default"]);
                 } else {
-                    c = localStorage.MultiLanguage
+                    c = localStorage.getItem("lang");
                 }
             }
             d = g.language[c];
             e = [];
             for (f in d) {
                 h = d[f];
-                if ($(f).get(0).tagName.toLowerCase() === "title") {
-                    document.title = h;
-                    continue
-                }
                 if (f.length > 0) {
-                    e.push($(f).html(d[f]))
+                    e.push($(f).html(h))
                 } else {
                     e.push(void 0)
                 }
@@ -290,7 +286,24 @@ $(window).ready(function () {
         fr.checked = false;
         en.checked = true;
     })
+    $(".parent .section-two .container .row .boxAbout .buttons .hireMe").on('click', function (event) {
+            event.preventDefault();
+            var email = 'waelwederni4@gmail.com';
+            window.location = 'mailto:' + email;
+        });
+    $(".parent .section-five .container .row .content .foot .sendMsg").on('click', function (event) {
+        event.preventDefault();
+        var email = 'waelwederni4@gmail.com';
+        var subject = $(".parent .section-five .container .row .content .foot .subject").val();
+        var emailBody = $(".parent .section-five .container .row .content .foot .message").val();
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
 
+    });
+    $(".parent .section-two .container .row .boxAbout .buttons .downloadCV").on("click", function (e) {
+        e.preventDefault();  //stop the browser from following
+        const lang= $("input[type='radio'][name='language-switch1']:checked").val();
+        window.open("cv/"+lang+".pdf",'_blank');
+    });
 
 //section-four on click img
     $(".parent .section-four .content .items .bord .info .box").on("click", function () {
