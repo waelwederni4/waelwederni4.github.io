@@ -181,7 +181,7 @@ $(window).ready(function () {
             for (f in d) {
                 h = d[f];
                 if (f.length > 0) {
-                    e.push($(f).html(h))
+                    e.push($("."+f).html(h))
                 } else {
                     e.push(void 0)
                 }

@@ -92,21 +92,16 @@
 
 }
 
-.parent .parnet-sections .section-one p {
-    font-size: 21px;
-    letter-spacing: 1px;
-    margin-bottom: 25px;
-}
+
 
 .wrapper{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     animation: glitch 2s 2s infinite;
 }
 .wrapper .static-txt{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 1.1vw;
+    font-weight: 200;
 }
 .wrapper .dynamic-txts{
     margin-left: 15px;
@@ -114,13 +109,13 @@
     line-height: 30px;
     overflow: hidden;
 }
-.dynamic-txts li{
+.wrapper .dynamic-txts li{
     list-style: none;
     color: var(--blueColor);
-    font-size: 24px;
+    font-size: 1.3vw;
     font-weight: 500;
     position: relative;
-    top: 0;
+    top: -3px;
     animation: slide 12s steps(4) infinite;
 }
 @keyframes slide {
