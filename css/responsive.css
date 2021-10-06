@@ -17,6 +17,13 @@
     .parent .parnet-sections .section-one .boxFirst{
         margin: 25px;
     }
+    .parent .parnet-sections .section-one .boxFirst .row .wrapper .static-txt{
+        font-size: 13px;
+    }
+    .parent .parnet-sections .section-one .boxFirst .row .wrapper .dynamic-txts li{
+        font-size: 15px;
+        top: -5px;
+    }
     .parent .section-four .content .grid .info {
         padding: 5px;
     }

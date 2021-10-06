@@ -91,7 +91,7 @@ body.en {
     text-align: center;
     font-size: 40px;
     font-weight: bolder;
-    width: 250px;
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);

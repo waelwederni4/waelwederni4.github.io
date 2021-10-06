@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="022cf25c-218b-43ff-886b-e5b9264c9ea6" name="Default Changelist" comment="edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/project-content/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project-content/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,8 @@
       <workItem from="1633202948945" duration="6966000" />
       <workItem from="1633258018735" duration="1535000" />
       <workItem from="1633386813219" duration="3429000" />
-      <workItem from="1633461174846" duration="12712000" />
+      <workItem from="1633461174846" duration="12746000" />
+      <workItem from="1633531400030" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1624658718736</created>
@@ -414,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633476179821</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="edit">
+      <created>1633477991924</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1633477991924</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

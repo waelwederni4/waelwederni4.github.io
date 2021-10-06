@@ -100,11 +100,11 @@
     animation: glitch 2s 2s infinite;
 }
 .wrapper .static-txt{
-    font-size: 1.1vw;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: bold;
 }
 .wrapper .dynamic-txts{
-    margin-left: 15px;
+    margin-left: 5px;
     height: 30px;
     line-height: 30px;
     overflow: hidden;
@@ -112,7 +112,7 @@
 .wrapper .dynamic-txts li{
     list-style: none;
     color: var(--blueColor);
-    font-size: 1.3vw;
+    font-size: 19px;
     font-weight: 500;
     position: relative;
     top: -3px;
@@ -125,17 +125,18 @@
 }
 .dynamic-txts li span{
     position: relative;
-    margin: 5px 0;
+    margin: 3px 0;
     line-height: 30px;
 }
 .dynamic-txts li span::after{
     content: "";
     position: absolute;
     left: 0;
+    top: 0;
     height: 100%;
     width: 100%;
     background: var(--whiteColor3);
-    border-left: 2px solid var(--blueColor);
+    border-left: 3px solid var(--blueColor);
     animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
