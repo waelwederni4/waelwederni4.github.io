@@ -24,7 +24,7 @@
         font-size: 15px;
         top: -5px;
     }
-    .parent .section-four .content .grid .info {
+    .parent .section-three .content .grid .info {
         padding: 5px;
     }
     .parent  .topnav .btn {
@@ -104,7 +104,7 @@
     }
 }
 @media (max-width:1000px) {
-    .parent.dark .section-four .content .grid {
+    .parent.dark .section-three .content .grid {
         grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(1,auto);
     }
@@ -126,7 +126,7 @@
         padding-bottom: 20px;
     }
 
-    .parent.dark .section-four .content .grid {
+    .parent.dark .section-three .content .grid {
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(2,auto);
     }
@@ -134,34 +134,34 @@
 }
 
 @media (max-width:400px) {
-    .parent .section-four .content .filter-list ul li {
+    .parent .section-three .content .filter-list ul li {
         margin-right: 5px;
     }
 }
 /*end portofolio  section*/
 /*start content  section*/
 @media (max-width:778px) {
-    .parent .section-five .content .head {
+    .parent .section-four .content .head {
         flex-direction: column;
     }
 
-    .parent .section-five .content .head .bord {
+    .parent .section-four .content .head .bord {
         width: 100%;
     }
 
-    .parent .section-five .content .head .bord:not(:last-child) {
+    .parent .section-four .content .head .bord:not(:last-child) {
         margin-bottom: 40px;
     }
 
-    .parent .section-five .content .foot input.half {
+    .parent .section-four .content .foot input.half {
         width: 100%;
     }
 
-    .parent .section-five .content .foot input.half:not(:last-child) {
+    .parent .section-four .content .foot input.half:not(:last-child) {
         margin-bottom: 30px;
     }
 
-    .parent .section-five .content .foot textarea {
+    .parent .section-four .content .foot textarea {
         margin-top: 0;
     }
 }

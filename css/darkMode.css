@@ -4,15 +4,15 @@
     box-shadow: none;
 }
 
-.parent.dark .section-four .content .grid .bord {
+.parent.dark .section-three .content .grid .bord {
     padding: 10px;
 }
 
-.parent.dark .section-four .content .grid .bord,
+.parent.dark .section-three .content .grid .bord,
 .parent.dark .parnet-sections .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
-.parent.dark .section-five .content .foot input,
-.parent.dark .section-five .content .foot textarea,
+.parent.dark .section-four .content .foot input,
+.parent.dark .section-four .content .foot textarea,
 .parent.dark .sidebar{
     border: none;
 }
@@ -43,13 +43,18 @@
     0 0 0 #797979 inset,
     0 0 0 #222222 inset;
 }
-
+.parent.dark .section-three .over-lay .close:before, .parent .section-three .over-lay .close:after{
+    background-color: var(--borderDark-light);
+}
+.parent.dark  .topnav .language .language__control:checked + .language__label {
+    background-color: #504e70;
+}
 .parent.dark .section-two .foot .bord .content,
 .parent.dark .section-three .row .content .bord,
-.parent.dark .section-four .content .grid .bord,
-.parent.dark .section-five .content .foot input,
-.parent.dark .section-five .content .foot textarea,
-.parent.dark .section-five .content .head .bord {
+.parent.dark .section-three .content .grid .bord,
+.parent.dark .section-four .content .foot input,
+.parent.dark .section-four .content .foot textarea,
+.parent.dark .section-four .content .head .bord {
     background-color: var(--Dark2Color);
 }
 .parent.dark .section-three .row .content .bord:hover i,
@@ -58,7 +63,7 @@
 .parent.dark .sidebar li a{
     background-color: var(--Dark3Color);
 }
-.parent.dark .section-four .content .grid .info {
+.parent.dark .section-three .content .grid .info {
     background-color:rgba(48, 46, 77, 0.9); }
 .parent.dark .parnet-sections .section::-webkit-scrollbar-thumb,
 .parent.dark .parnet-sections .section .row .txt .atf-sec_icon:before,
@@ -86,13 +91,13 @@
     background-color: var(--SlideDark);
 }
 .parent.dark .parnet-sections .section-one ul.soical-icons li,
-.parent.dark .section-five .content .foot button,
+.parent.dark .section-four .content .foot button,
 .parent.dark .parnet-sections .section-two .head .boxAbout .buttons button{
     border-right:1px solid var(--Dark2Color);
     background-color: var(--Dark3Color);
 }
-.parent.dark .section-four .content .filter-list ul li.active,
-.parent.dark .section-four .content .filter-list ul li:hover {
+.parent.dark .section-three .content .filter-list ul li.active,
+.parent.dark .section-three .content .filter-list ul li:hover {
     border-bottom: 3px solid var(--Dark4Color);
     border-bottom-color: var(--Dark4Color);
 }
@@ -110,37 +115,37 @@
 .parent.dark .parnet-sections .section h3,
 .parent.dark .parnet-sections .section span,
 .parent.dark .parnet-sections .section-two .foot .bord .content .txt span i,
-.parent.dark .section-four .content .filter-list ul li,
+.parent.dark .section-three .content .filter-list ul li,
 .parent.dark .nav-bar h1,
 .parent.dark .parnet-sections .section-two .foot .bord h2,
 .parent.dark .parnet-sections .section-two .head .content .bord.two .skill-name,
 .parent.dark .parnet-sections .section-two .head .content .bord.two .skill-per::before,
 .parent.dark .parnet-sections .section-one ul.soical-icons li,
-.parent.dark .section-five .content .foot button,
+.parent.dark .section-four .content .foot button,
 .parent.dark .section-three .row .content .bord:hover i,
 .parent.dark .nav-bar .row li[class="heading"],
-.parent.dark .section-five .content .foot input,
-.parent.dark .section-five .content .foot textarea {
+.parent.dark .section-four .content .foot input,
+.parent.dark .section-four .content .foot textarea {
     color: var(--text-dark);
 }
 .parent.dark .sidebar li .tooltip,
-.parent.dark .section-four .content .grid .bord .info .tech img,
-.parent.dark .section-four .content .grid .bord .info .button__holder .plus,
-.parent.dark .section-four .content .grid .bord .info .box .btn-white::after,
-.parent.dark .section-four .content .grid .bord .info .box .btn-white{
+.parent.dark .section-three .content .grid .bord .info .tech img,
+.parent.dark .section-three .content .grid .bord .info .button__holder .plus,
+.parent.dark .section-three .content .grid .bord .info .box .btn-white::after,
+.parent.dark .section-three .content .grid .bord .info .box .btn-white{
     background: var(--text-dark);
 }
 .parent.dark .parnet-sections .section-one img,
-.parent.dark .section-four .content .grid .bord,
-.parent.dark .section-four .content .grid .bord .info i,
-.parent.dark .section-four .content .grid li,
+.parent.dark .section-three .content .grid .bord,
+.parent.dark .section-three .content .grid .bord .info i,
+.parent.dark .section-three .content .grid li,
 .parent.dark .parnet-sections .topnav .language .language__label,
 .parent.dark .parnet-sections .topnav .switcher .label .ball,
 .parent.dark .parnet-sections .section-one .main-img{
     background-color: var(--text-dark);
 }
-.parent.dark .section-four .content .grid .bord .info .button__holder .plus,
-.parent.dark .section-five .content .head .bord i,
+.parent.dark .section-three .content .grid .bord .info .button__holder .plus,
+.parent.dark .section-four .content .head .bord i,
 .parent.dark .parnet-sections .section-two .head h3 span{
     color: var(--Dark4Color);
 }

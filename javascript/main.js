@@ -40,7 +40,7 @@ $(window).ready(function () {
             welcome.style.display = 'none';
             welcome.style.opacity = 0;
         }, 4000);
-        var nodes  = [].slice.call(document.querySelectorAll('.parent .section-four .content .grid li'), 0);
+        var nodes  = [].slice.call(document.querySelectorAll('.parent .section-three .content .grid li'), 0);
         function getDirection(ev, obj) {
             var w, h, x, y, d;
             w = obj.offsetWidth;
@@ -148,7 +148,8 @@ $(window).ready(function () {
             $(".HeadLogo").attr("href","imgs/logoDark.png");
             chk.checked = false;
         }
-        if (lang!="" || lang!=undefined){
+        if (lang!=="" || lang!==undefined){
+            $("#"+lang).prop("checked", true);
             MultiLanguage(lang);
         }
     }
@@ -181,7 +182,14 @@ $(window).ready(function () {
             for (f in d) {
                 h = d[f];
                 if (f.length > 0) {
-                    e.push($("."+f).html(h))
+                    if(f.indexOf("StrDateTime") !== -1){
+                        e.push($("."+f).attr("data-date",h));
+                    }else if(f.indexOf("StrContactLab") !== -1){
+                        e.push($("."+f).attr("placeholder",h));
+                    }else{
+                        e.push($("."+f).html(h))
+                    }
+
                 } else {
                     e.push(void 0)
                 }
@@ -195,7 +203,7 @@ $(window).ready(function () {
         localStorage.setItem("lang",lang);
         MultiLanguage(lang);
     })
-    $(".parent .section-four .content .grid .bord .info .button__holder").on("click", function () {
+    $(".parent .section-three .content .grid .bord .info .button__holder").on("click", function () {
         let ele = $(this).parent().parent().children('a').children('img').attr("src");
         const name=ele.replace("imgs/projects/","").replace("0.jpg","").replaceAll("/","");
         getUrl(name);
@@ -259,15 +267,15 @@ $(window).ready(function () {
         })
     })
 
-//section-four filter items
-    $(".parent .section-four .content .filter-list ul li").on("click", function () {
+//section-three filter items
+    $(".parent .section-three .content .filter-list ul li").on("click", function () {
         $(this).addClass("active").siblings().removeClass("active");
-        const parent = $(".parent .section-four .content .grid").children();
+        const parent = $(".parent .section-three .content .grid").children();
         var filters = $(this).data("filter");
         if (filters == "all") {
             parent.fadeIn().parent().removeClass("short") // grid setting
         }else {
-            let item = $(".parent .section-four .content .grid ."+ filters);
+            let item = $(".parent .section-three .content .grid ."+ filters);
             parent.fadeOut(function () {
                 parent.parent().addClass("short")
             })
@@ -291,11 +299,11 @@ $(window).ready(function () {
             var email = 'waelwederni4@gmail.com';
             window.location = 'mailto:' + email;
         });
-    $(".parent .section-five .container .row .content .foot .sendMsg").on('click', function (event) {
+    $(".parent .section-four .container .row .content .foot .sendMsg").on('click', function (event) {
         event.preventDefault();
         var email = 'waelwederni4@gmail.com';
-        var subject = $(".parent .section-five .container .row .content .foot .subject").val();
-        var emailBody = $(".parent .section-five .container .row .content .foot .message").val();
+        var subject = $(".parent .section-four .container .row .content .foot .subject").val();
+        var emailBody = $(".parent .section-four .container .row .content .foot .message").val();
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
 
     });
@@ -305,14 +313,14 @@ $(window).ready(function () {
         window.open("cv/"+lang+".pdf",'_blank');
     });
 
-//section-four on click img
-    $(".parent .section-four .content .items .bord .info .box").on("click", function () {
+//section-three on click img
+    $(".parent .section-three .content .items .bord .info .box").on("click", function () {
         let ele = $(this).parent().parent().children('a').children('img').attr("src");
         const name=ele.replace("imgs/projects/","").replace("/0.jpg","");
-        const overLay = $(".parent .section-four .over-lay");
+        const overLay = $(".parent .section-three .over-lay");
         const elemName=$(this).parent().parent().attr('class').split(" ")[1];
         overLay.find(".slider").addClass(elemName);
-        const close=$(".parent .section-four .over-lay .close");
+        const close=$(".parent .section-three .over-lay .close");
         overLay.fadeIn().css("display","flex");
         close.on("click", function() { $(this).parent().fadeOut();
             overLay.find(".slider").remove();

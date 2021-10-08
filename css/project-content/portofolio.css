@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 
-.parent .parnet-sections .section-four .head{
+.parent .parnet-sections .section-three .head{
     display: block;
 }
 
-.parent .section-four .content .filter-list ul {
+.parent .section-three .content .filter-list ul {
     text-align: center;
 }
-.parent .section-four .content .filter-list ul li{
+.parent .section-three .content .filter-list ul li{
     list-style: none;
     display: inline-block;
     margin-right: 20px;
@@ -15,13 +15,13 @@
     padding-bottom: 5px;
 }
 
-.parent .section-four .content .filter-list ul li.active,
-.parent .section-four .content .filter-list ul li:hover {
+.parent .section-three .content .filter-list ul li.active,
+.parent .section-three .content .filter-list ul li:hover {
     border-bottom: 3px solid var(--blueColor);
     border-bottom-color: var(--blueColor);
 }
 
-.parent .section-four .content .grid {
+.parent .section-three .content .grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -32,7 +32,7 @@
     width: 100%;
 }
 
-.parent .section-four .content .grid.short{
+.parent .section-three .content .grid.short{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,1fr);
     padding: 0;
@@ -41,7 +41,7 @@
 }
 
 
-.parent .section-four .content .grid .bord {
+.parent .section-three .content .grid .bord {
     border: 1px solid var(--borderDark-light);
     background-color: white;
     max-height: 300px;
@@ -50,7 +50,7 @@
     object-fit: cover;
     border-radius: 4px;
 }
-.parent .section-four .content .grid li .normal {
+.parent .section-three .content .grid li .normal {
     max-width: 100%;
     height: 100%;
     background-color: #ECF0F1;
@@ -59,28 +59,28 @@
     text-align: center;
     font-size: 50px;
     line-height: 50px; }
-.parent .section-four .content .grid li .normal img {
+.parent .section-three .content .grid li .normal img {
     pointer-events: none;
     width: 100%;
     height: 100%;
     fill: rgba(52, 73, 94, 0.2); }
 
-.parent .section-four .content .grid .bord .info {
+.parent .section-three .content .grid .bord .info {
     width: 100%;
     height: 100%;
     transition:0.5s ease-in-out opacity;
 }
-.parent .section-four .content .grid .bord .info h2 {
+.parent .section-three .content .grid .bord .info h2 {
     font-size: 3.0vh;
 }
-.parent .section-four .content .grid .bord .info h4 {
+.parent .section-three .content .grid .bord .info h4 {
     font-size: 2.5vh;
     color: rgba(255, 255, 255, 0.9);
 }
-.parent .section-four .content .grid .bord .info p {
+.parent .section-three .content .grid .bord .info p {
     font-size: 2vh;
 }
-.parent .section-four .content .grid .bord .info i {
+.parent .section-three .content .grid .bord .info i {
     right: 0;
     bottom:10%;
     width: 55px;
@@ -93,7 +93,7 @@
     color:var(--blueColor)
 }
 
-.parent .section-four .container .over-lay {
+.parent .section-three .container .over-lay {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0,0.6);
@@ -109,7 +109,7 @@
 /************************/
 
 
-.parent .section-four .content .grid .info {
+.parent .section-three .content .grid .info {
     -webkit-transform: rotate3d(1, 0, 0, 90deg);
     transform: rotate3d(1, 0, 0, 90deg);
     width: 100%;
@@ -122,11 +122,11 @@
     bottom: 0;
     border-radius: 4px;
     background-color:rgba(33, 150, 243, 0.9); }
-.parent .section-four .content .grid .bord .info .tech {
+.parent .section-three .content .grid .bord .info .tech {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.parent .section-four .content .grid .bord .info .tech img{
+.parent .section-three .content .grid .bord .info .tech img{
     max-height: 35px;
     margin: 10px;
     padding: 2px;
@@ -308,7 +308,7 @@
   styles for demo purposes
 ======================================================================== */
 
-.parent .section-four .content .grid li {
+.parent .section-three .content .grid li {
     border: 1px solid var(--borderDark-light);
     background-color: white;
     padding: 7px;
@@ -320,83 +320,83 @@
     float: left;
     margin: 7px;
     list-style: none; }
-.parent .section-four .content .grid li a {
+.parent .section-three .content .grid li a {
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
     border-radius: 4px; }
-.parent .section-four .content .grid li h2 {
+.parent .section-three .content .grid li h2 {
     margin: 0;
     color: rgba(255, 255, 255, 0.9); }
-.parent .section-four .content .grid li p {
+.parent .section-three .content .grid li p {
     font-size: 12px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.8); }
 
 /******************************************************/
-.parent .section-four .over-lay .slider.mobile {
+.parent .section-three .over-lay .slider.mobile {
     width:300px;
     padding: 63px;
     overflow: visible;
 }
-.parent .section-four .over-lay .slider.web {
+.parent .section-three .over-lay .slider.web {
     width:50%;
     padding: 80px;
     overflow: visible;
 }
-.parent .section-four .over-lay .slider.desktop {
+.parent .section-three .over-lay .slider.desktop {
     width:50%;
     padding: 80px;
     overflow: visible;
 }
-.parent .section-four .over-lay .slider {
+.parent .section-three .over-lay .slider {
     width:100%;
     overflow: visible;
 }
-.parent .section-four .over-lay .slider img{
+.parent .section-three .over-lay .slider img{
     -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
 }
-.parent .section-four .over-lay .slider .VideoProj{
+.parent .section-three .over-lay .slider .VideoProj{
     -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.3));
     width: 100%    !important;
     height: auto   !important;
 }
-.parent .section-four .over-lay .close {
+.parent .section-three .over-lay .close {
     position: absolute;
     right: 32px;
     top: 60px;
     width: 32px;
     height: 32px;
-    opacity: 0.3;
+    opacity: 0.5;
 }
-.parent .section-four .over-lay .close:hover {
+.parent .section-three .over-lay .close:hover {
     opacity: 1;
 }
-.parent .section-four .over-lay .close:before, .parent .section-four .over-lay .close:after {
+.parent .section-three .over-lay .close:before, .parent .section-three .over-lay .close:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #333;
+    background-color: var(--Dark2Color);
 }
-.parent .section-four .over-lay .close:before {
+.parent .section-three .over-lay .close:before {
     transform: rotate(45deg);
 }
-.parent .section-four .over-lay .close:after {
+.parent .section-three .over-lay .close:after {
     transform: rotate(-45deg);
 }
 
 /********************   ************/
-.parent .section-four .content .grid .bord .info .box{
+.parent .section-three .content .grid .bord .info .box{
     align-self: center;
     position: absolute;
     margin-top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.parent .section-four .content .grid .bord .info .box .btn:link,
-.parent .section-four .content .grid .bord .info .box .btn:visited{
+.parent .section-three .content .grid .bord .info .box .btn:link,
+.parent .section-three .content .grid .bord .info .box .btn:visited{
     text-decoration: none;
     text-transform:uppercase;
     padding:2px 10px;
@@ -405,26 +405,26 @@
     transition: all .5s;
 }
 
-.parent .section-four .content .grid .bord .info .box .btn-white{
+.parent .section-three .content .grid .bord .info .box .btn-white{
     background:#fff;
     color:#000;
 }
 
-.parent .section-four .content .grid .bord .info .box .btn:hover{
+.parent .section-three .content .grid .bord .info .box .btn:hover{
     box-shadow:0px 10px 10px rgba(0,0,0,0.2);
     transform : translateY(-3px);
 }
 
-.parent .section-four .content .grid .bord .info .box .btn:active{
+.parent .section-three .content .grid .bord .info .box .btn:active{
     box-shadow:0px 5px 10px rgba(0,0,0,0.2);
     transform:translateY(-1px);
 }
 
-.parent .section-four .content .grid .bord .info .box .btn-bottom-animation-1{
+.parent .section-three .content .grid .bord .info .box .btn-bottom-animation-1{
     animation:comeFromBottom 1s ease-out .8s;
 }
 
-.parent .section-four .content .grid .bord .info .box .btn::after{
+.parent .section-three .content .grid .bord .info .box .btn::after{
     content:"";
     text-decoration: none;
     text-transform:uppercase;
@@ -439,11 +439,11 @@
     transition: all .5s;
 }
 
-.parent .section-four .content .grid .bord .info .box .btn-white::after {
+.parent .section-three .content .grid .bord .info .box .btn-white::after {
     background: #fff;
 }
 
-.parent .section-four .content .grid .bord .info .box .btn-animation-1:hover::after {
+.parent .section-three .content .grid .bord .info .box .btn-animation-1:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
@@ -459,7 +459,7 @@
     }
 }
 /*****************************/
-.parent .section-four .content .grid .bord .info .button__holder {
+.parent .section-three .content .grid .bord .info .button__holder {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -470,14 +470,14 @@
     align-items: center;
     justify-content: center;
 }
-.parent .section-four .content .grid .bord .info .button__holder:after {
+.parent .section-three .content .grid .bord .info .button__holder:after {
     content: "";
     position: absolute;
     z-index: 0;
     bottom: 5%;
     left: 5%;
 }
-.parent .section-four .content .grid .bord .info .button__holder .plus {
+.parent .section-three .content .grid .bord .info .button__holder .plus {
     position: relative;
     z-index: 1;
     width: 50px;
@@ -489,7 +489,7 @@
 
 }
 
-.parent .section-four .content .grid .bord .info .button__holder .plus:hover {
+.parent .section-three .content .grid .bord .info .button__holder .plus:hover {
     transform: rotate(45deg);
     box-shadow: 0 0 1px 15px rgba(255, 255, 255, 0.4), 0 0 1px 30px rgba(255, 255, 255, 0.1), 0 0 1px 45px rgba(255, 255, 255, 0.1);
 }

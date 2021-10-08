@@ -1,40 +1,40 @@
-.parent .section-five .content {
+.parent .section-four .content {
     margin-top: 50px;
     width: 100%;
 }
 
-.parent .section-five .content .head {
+.parent .section-four .content .head {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.parent .section-five .content .head .bord {
+.parent .section-four .content .head .bord {
     width: 32%;
     padding: 15px 20px;
     border-radius: 25px;
 }
 
-.parent .section-five .content .head .bord i {
+.parent .section-four .content .head .bord i {
     font-size: 50px;
     color:var(--blueColor);
     margin-bottom: 30px;
 }
 
-.parent .section-five .content .head .bord span {
+.parent .section-four .content .head .bord span {
     font-size: 20px;
     margin-top: 5px;
 }
 
-.parent .section-five .content .foot {
+.parent .section-four .content .foot {
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
 
-.parent .section-five .content .foot input,
-.parent .section-five .content .foot textarea {
+.parent .section-four .content .foot input,
+.parent .section-four .content .foot textarea {
     padding:15px 20px;
     border: 1px solid var(--borderDark-light);
     border-radius: 20px;
@@ -42,24 +42,24 @@
     font-size: 17px;
 }
 
-.parent .section-five .content .foot input.half {
+.parent .section-four .content .foot input.half {
     width: 49%;
 }
-.parent .section-five .content .foot input.half:nth-of-type(1) {
+.parent .section-four .content .foot input.half:nth-of-type(1) {
     float: left;
 }
-.parent .section-five .content .foot input.half:nth-of-type(2) {
+.parent .section-four .content .foot input.half:nth-of-type(2) {
     float: right;
 }
 
-.parent .section-five .content .foot textarea {
+.parent .section-four .content .foot textarea {
     width: 100%;
     margin-top: 30px;
     resize: none;
     height: 200px;
 }
 
-.parent .section-five .content .foot button {
+.parent .section-four .content .foot button {
     background-color: var(--blueColor);
     color: white;
     border-radius: 25px;
@@ -74,7 +74,7 @@
     padding: 10px 30px;
     margin-right: 20px;
 }
-.parent .section-five .content .foot button:hover {
+.parent .section-four .content .foot button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
