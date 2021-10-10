@@ -532,7 +532,7 @@ body.en {
 .parent .sidebar.open  #btn{
     text-align: right;
 }
-.parent .sidebar i{
+.parent .sidebar li i{
     color: var(--SlideDark);
     height: 60px;
     min-width: 50px;
@@ -593,6 +593,7 @@ body.en {
 .parent .sidebar li a.active,
 .parent .sidebar li a:hover{
     background: var(--blueColor);
+    color: var(--whiteColor3);
 }
 .parent .sidebar li a .links_name{
     color: var(--SlideDark);
@@ -608,10 +609,12 @@ body.en {
     opacity: 1;
     pointer-events: auto;
 }
+.parent .sidebar li a:active .links_name,
+.parent .sidebar li a:active i,
 .parent .sidebar li a:hover .links_name,
 .parent .sidebar li a:hover i{
     transition: all 0.5s ease;
-    color: var(--SlideDark);
+    color: var(--whiteColor3);
 }
 .parent .sidebar li i{
     height: 50px;
