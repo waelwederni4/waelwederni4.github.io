@@ -30,6 +30,7 @@ $(window).ready(function () {
     var welcome = document.getElementById('welcome');
     var iconSidebar  = [].slice.call(document.querySelectorAll('.parent .sidebar  ul li'), 0);
     $(function () {
+        loadPage();
         fader.forEach(fad=>{
             appearOnscroll.observe(fad);
         })
@@ -138,6 +139,8 @@ $(window).ready(function () {
     function loadPage() {
         const mode=localStorage.getItem("mode");
         const lang=localStorage.getItem('lang');
+        console.log(lang)
+        console.log(mode)
         $(".parent").attr("class", "parent "+mode);
         if (mode == "light") {
             document.body.style.backgroundColor="#fdf9ff";
@@ -148,10 +151,10 @@ $(window).ready(function () {
             $(".HeadLogo").attr("href","imgs/logoDark.png");
             chk.checked = false;
         }
-        if (lang!=="" || lang!==undefined){
+        if (lang !== null){
             $("#"+lang).prop("checked", true);
-            MultiLanguage(lang);
         }
+        MultiLanguage(lang);
     }
     function getUrl(name){
         $.getJSON("json/urls.json", function (data) {
@@ -163,19 +166,16 @@ $(window).ready(function () {
     $(window).on("load",loadPage);
     function MultiLanguage(c) {
         var b = this;
-        if (c == null) {
-            c = null
-        }
+        console.log(localStorage.getItem("lang"))
         return $.getJSON("json/language.json", function (g) {
             var f, d, h, e;
             if (c !== null) {
                 localStorage.setItem("lang",c);
+                console.log("Condition 0");
             } else {
-                if (typeof localStorage.getItem("lang") === "undefined") {
-                    localStorage.setItem("lang",g.config["default"]);
-                } else {
-                    c = localStorage.getItem("lang");
-                }
+                localStorage.setItem("lang",g.config["default"]);
+                c=g.config["default"];
+                console.log("Condition 1 "+c);
             }
             d = g.language[c];
             e = [];
